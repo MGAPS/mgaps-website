@@ -1,0 +1,28 @@
+<a name="$position$"></a>
+<div class="card">
+    <div class="card-content">
+        <div class="media">
+            <!-- 
+                Everything is in the media container so that the picture
+                can be the full height of the card
+            -->
+            <div class="media-content">
+                $if(name)$<p class="title is-4">$name$</p>$endif$
+                <p class="subtitle is-4">$position$</p>
+                <p>
+                    $body$
+                </p>
+                $if(email)$
+                <p> email: <a href="mailto:$email$">$email$</a></p>
+                $endif$
+            </div>
+            $if(picture)$
+            <div class="media-right">
+                <figure class="image is-128x128">
+                    <img src="$picture$">
+                </figure>
+            </div>
+            $endif$
+        </div>
+    </div>
+</div>

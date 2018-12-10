@@ -1,0 +1,74 @@
+---
+title: McGill Graduate Association of Physics Students
+---
+<!-- 
+    The index page is mostly HTML to get better control over the layout 
+-->
+
+<div class="columns">
+
+    <div class="column is-two-fifths">
+        <br>
+        <figure class="image is-1x1">
+            <img src="images/icon.png">
+        </figure>
+    </div>
+
+    <div class="column">
+        <h3 class="title is-3">
+            Welcome to the MGAPS website!
+        </h3>
+        <p>
+            Our mandate: to foster community and to represent 
+            graduate physics students at McGill University in all affairs of the Physics Department. 
+        </p>
+
+        <p>
+            We encourage all existing students and new students to actively participate in 
+            all MGAPS events, as well as join any MGAPS committees.  Please feel free to contact 
+            any of executive members either by email or in person if you would like to get involved 
+            or if you have any questions.
+        </p>
+    </div>
+
+</div>
+
+<h3 class="title is-3">Recent announcements</h3>
+$partial("templates/ann-list.html")$
+
+<p>…or you can <a href="/announcements.html">find all announcements here</a>.</p>
+
+<!--
+    Google calendar widgets does not show properly on mobile
+    Therefore, we hide it if the viewport is smaller than 768px wide.
+
+    This width (768ox) is defined in Bulma's size categories
+    https://bulma.io/documentation/modifiers/responsive-helpers/
+
+    The google calendar widget is also set to a maximum width of 700px.
+-->
+<div class="section is-hidden-mobile">
+    <h3 class="title is-3">Calendar</h3>
+
+    <div class="has-text-centered">
+        <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=ctpaa142ofvam9td927eu990p4%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FToronto" style="border-width:0" width="700" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+</div>
+
+<h3 class="title is-3">Quick links</h3>
+
+<div class="columns">
+$for(quick-links)$
+    <!--
+        The width of the column elements depend on the number of quick links
+        Available widths are:
+            is-half
+            is-one-third
+            is-one-quarter
+            is-one-fifth
+    -->
+    <div class="column is-one-fifth">
+        $partial("templates/quick-link.html")$
+    </div>
+$endfor$
+</div>

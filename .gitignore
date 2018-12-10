@@ -1,3 +1,4 @@
+# Haskell-specific ignores
 dist
 dist-*
 cabal-dev
@@ -20,3 +21,7 @@ cabal.project.local
 cabal.project.local~
 .HTF/
 .ghc.environment.*
+
+# Hakyll-specific ignored
+_rendered/
+_cache/

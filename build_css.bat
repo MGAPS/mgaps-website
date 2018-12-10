@@ -1,0 +1,1 @@
+cd sass & .\sass mgaps-style.scss:..\css\mgaps-style.css
