@@ -1,1 +1,0 @@
-pandoc --toc README.md -o README.pdf --data-dir=templates --template="templates/eisvogel.tex" --highlight-style=tango
