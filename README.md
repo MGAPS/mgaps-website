@@ -75,10 +75,10 @@ The body of the file is anything that will appear as profile description. Here's
 
 ```markdown
 ---
-name: Mohit Bhardwaj
-email: work.mohitbhardwaj@gmail.com
+name: My Name
+email: my.name@domain.com
 position: VP Academic
-picture: images/profiles/mohit-bhardwaj.jpg
+picture: images/profiles/ny-name.jpg
 ---
 
 As the VP Academic, it is my job to contribute to a positive academic 
