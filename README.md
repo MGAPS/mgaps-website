@@ -174,6 +174,12 @@ For ease of use, the `mgaps-website` compiler forces certain things to stay the 
 
 ## Local Usage
 
+### Building the compiler locally
+
+Building the `mgaps-website` compiler requires the [Haskell `stack`](https://docs.haskellstack.org/en/stable/README/) tool, which will install all dependencies. To build the compiler, run `stack install` from the same directory where `mgaps-website.cabal` and `stack.yaml` are located.
+
+### Available commands
+
 The `mgaps-website` compiler is a command-line program with a few options. An overview of the available commands is available as follows:
 
 ```
