@@ -176,7 +176,7 @@ For ease of use, the `mgaps-website` compiler forces certain things to stay the 
 
 The `mgaps-website` compiler is a command-line program with a few options. An overview of the available commands is available as follows:
 
-```powershell
+```
 > mgaps-website --help
 Usage: mgaps-website.exe [-v|--verbose] COMMAND
   mgaps-website.exe - Static site compiler created with Hakyll
@@ -199,7 +199,7 @@ Available commands:
 
  The most useful command is `build`, used to compile the website source into a built website:
 
-```powershell
+```
 > mgaps-website build
 Initialising...
   Creating store...
@@ -221,7 +221,7 @@ This command will update the last built website version into a folder called `/_
 
 Once the website has been built using `mgaps-website build` or `mgaps-website rebuild`, the rendered website can be checked for common mistakes (such as nonexistent links) using the `check` command:
 
-```powershell
+```
 > mgaps-website check
 Checking file _rendered/workspace.html
 (... omitted ...)
