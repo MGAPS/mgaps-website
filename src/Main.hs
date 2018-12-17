@@ -8,6 +8,7 @@ import           Data.List                   (sortBy)
 import           Data.Maybe                  (fromMaybe)
 import           Data.Ord                    (comparing)
 import           Hakyll
+import           Hakyll.Images               (compressJpgCompiler)
 
 -- Hakyll can trip on characters like apostrophes
 -- https://github.com/jaspervdj/hakyll/issues/109
@@ -26,8 +27,6 @@ import qualified Text.Blaze.Html.Renderer.String as St
 
 import           Template                     (mkDefaultTemplate, tocTemplate, Schema, NavigationLink(..))
 import           BulmaFilter                  (bulmaTransform)
-
-import           CompressJpg                  (compressJpgCompiler)
 
 schema :: Schema
 schema = [

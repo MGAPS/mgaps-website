@@ -10,23 +10,20 @@ maintainer:          Laurent P. René de Cotret
 copyright:           2018 Laurent P. René de Cotret
 category:            Web
 build-type:          Simple
-extra-source-files:  doc\README.md
 cabal-version:       >=1.10
 
 executable mgaps-website
   hs-source-dirs:      src
   main-is:             Main.hs
-  other-modules:       CompressJpg, 
-                       Template, 
+  other-modules:       Template, 
                        BulmaFilter
   default-language:    Haskell2010
   ghc-options:         -threaded -O2
   build-depends:       base >= 4.8 && < 5,
                        hakyll,
+                       hakyll-images,
                        pandoc,
                        pandoc-types,
-                       containers,
                        blaze-html,
                        blaze-markup,
-                       bytestring,
-                       JuicyPixels
+                       bytestring
