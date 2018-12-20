@@ -48,4 +48,8 @@ test_script:
 # Build the website compiler and install it in this directory (stack install)
 # The ugly echo "" hack is to avoid complaints about 0 being an invalid file
 # descriptor
-- echo "" | stack %ARGS% --no-terminal install --ghc-options=-Werror
+- echo "" | stack %ARGS% --no-terminal build --ghc-options=-Werror
+
+# Build website and check all links
+- stack exec mgaps-website rebuild
+- stack exec mgaps-website check
