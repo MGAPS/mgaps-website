@@ -52,4 +52,4 @@ test_script:
 
 # Build website and check all links
 - stack exec mgaps-website rebuild
-- stack exec mgaps-website check
+- stack exec -- mgaps-website check --internal-links
