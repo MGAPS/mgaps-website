@@ -33,7 +33,7 @@ environment:
     TMP: "c:\\tmp"
 
   matrix:
-  - ARGS: "--resolver lts-12"
+  - ARGS: ""
 
 matrix:
   fast_finish: true
