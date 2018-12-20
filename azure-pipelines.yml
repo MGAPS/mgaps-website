@@ -12,7 +12,7 @@ pool:
 steps:
 - script: |
     curl -sS -ostack.zip -L --insecure https://get.haskellstack.org/stable/windows-x86_64.zip
-    7z x stack.zip stack.exe
+    unzip -o stack.zip stack.exe
   displayName: 'Install stack'
 
 - script: stack setup > nul
