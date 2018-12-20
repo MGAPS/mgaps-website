@@ -1,6 +1,6 @@
 # McGill Graduate Association of Physics Students website
 
-[![Build status](https://ci.appveyor.com/api/projects/status/8v6he2ph0mbspnl8?svg=true)](https://ci.appveyor.com/project/LaurentRDC/mgaps-website)
+Build status: [![Build status](https://ci.appveyor.com/api/projects/status/rcf0r73ne483csp9?svg=true)](https://ci.appveyor.com/project/LaurentRDC/mgaps-website)
 
 This repository hosts the source material and code for the newest version of the MGAPS website.
 
