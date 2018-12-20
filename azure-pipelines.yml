@@ -15,7 +15,7 @@ steps:
     unzip -o stack.zip stack.exe
   displayName: 'Install stack'
 
-- script: stack setup > nul
+- script: stack setup
   displayName: 'Download appropriate GHC version'
 
 - script: |
