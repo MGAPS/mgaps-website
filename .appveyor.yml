@@ -14,6 +14,8 @@ before_test:
 - curl -sS -ostack.zip -L --insecure https://get.haskellstack.org/stable/windows-x86_64.zip
 - 7z x stack.zip stack.exe
 
+- choco install openssh -y
+
 cache: 
   - "C:\\sr"
 
@@ -27,7 +29,7 @@ skip_commits:
 clone_folder: "c:\\stack"
 environment:
   global:
-    STACK_ROOT: "C:\\sr"
+    STACK_ROOT: "c:\\sr"
 
     # Override the temp directory to avoid sed escaping issues
     # See https://github.com/haskell/cabal/issues/5386
@@ -35,9 +37,6 @@ environment:
 
   matrix:
   - ARGS: ""
-
-matrix:
-  fast_finish: true
 
 test_script:
 
@@ -55,9 +54,3 @@ test_script:
 # The `check` command makes sure that no links are dead
 - mgaps-website rebuild
 - mgaps-website check
-
-on_success:
-# openSSH not included in Visual Studio 2017 build image
-- choco install openssh -y
-
-# - deploy.ps1
