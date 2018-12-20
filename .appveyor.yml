@@ -6,7 +6,6 @@
 #
 build: off
 
-image: Visual Studio 2017
 
 before_test:
 # http://help.appveyor.com/discussions/problems/6312-curl-command-not-found
