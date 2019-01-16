@@ -20,8 +20,8 @@ cache:
 # Skipping commits affecting specific files (GitHub only).
 # More details here: /docs/appveyor-yml
 #
-# NOTE: it is extremely important that file changes in docs/
-#       be ignored, since otherwise it can lead to infinite 
+# NOTE: it is of paramount importance that file changes in docs/
+#       be ignored, since otherwise it can lead to infinitely
 #       recursive builds
 skip_commits:
   files:
@@ -77,11 +77,18 @@ test_script:
 # The following script is taken verbatim from Appveyor documentation:
 #   https://www.appveyor.com/docs/how-to/git-push/#creating-github-personal-access-token
 on_success:
-  - git config --global credential.helper store
-  - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-  # An identity is required, even if it is trivial
-  - git config --global user.name "Appveyor automatic build"
-  - git config --global user.email "<>"
-  # Only commit the built website, which is located in docs/
-  - git commit -m "Deployment of built website" -- docs
-  - git push origin master
+
+# Set up repository access based on access tokens
+- git config --global credential.helper store
+- ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+
+# An identity is required, even if it is trivial
+- git config --global user.name "Appveyor automatic build"
+- git config --global user.email "<>"
+
+# Only commit the built website, which is located in docs/
+# It is *capital* to only commit to docs/ because 
+# changes in this folder do not trigger an Appveyor build
+# Otherwise, infinitely recursive builds will occur
+- git commit -m "Deployment of built website" -- docs
+- git push origin master

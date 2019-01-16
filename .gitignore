@@ -23,8 +23,4 @@ cabal.project.local~
 .ghc.environment.*
 
 # Hakyll-specific ignored
-_rendered/
 _cache/
-
-# deploy key-related things
-keys/

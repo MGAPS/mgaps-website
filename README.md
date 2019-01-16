@@ -48,7 +48,7 @@ Static content is written in [Markdown](https://daringfireball.net/projects/mark
 
 To update a static page, simply edit the source Markdown file. `mgaps-website` will compile Markdown source to HTML during compilation.
 
-Statis pages have metadata at the top. At this time, the following metadata is available:
+Static pages have metadata at the top. At this time, the following metadata is available:
 
 * title (required): title of the page. This title will appear in the top banner.
 * withtoc (optional): if `withtoc: yes`, a table of content will be automatically inserted at the top of the page.
