@@ -35,6 +35,13 @@ environment:
   matrix:
   - ARGS: ""
 
+  # This access token allows Appveyor builds to commit back to github
+  # This is required because we don't want anyone at MGAPS to have to install
+  # the Haskell toolchain and build the website
+  # Commits on the source repository will be automatically reflected
+  access_token:
+    secure: 4f631c4f7acb4b97b2acc9ca2334891e3bc41350
+
 matrix:
   fast_finish: true
 
@@ -48,8 +55,22 @@ test_script:
 # Build the website compiler and install it in this directory (stack install)
 # The ugly echo "" hack is to avoid complaints about 0 being an invalid file
 # descriptor
-- echo "" | stack %ARGS% --no-terminal build --ghc-options=-Werror
+- echo "" | stack %ARGS% --no-terminal install --ghc-options=-Werror
 
-# Build website and check all links
-- stack exec mgaps-website rebuild
-- stack exec -- mgaps-website check --internal-links
+# At this point, a new executable exists: `mgaps-website`.
+# We can use it to build the website from scratch ('rebuild')
+# and then check that all internal links are live (check --internal-links) 
+- mgaps-website rebuild
+- mgaps-website check --internal-links
+
+# On success, we commit the built website (in the docs/ folder) back to github
+# This is so that it can be visible as a GitHub page.
+# The following script is taken verbatim from Appveyor documentation:
+#   https://www.appveyor.com/docs/how-to/git-push/#creating-github-personal-access-token
+on_success:
+  - git config --global credential.helper store
+  - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+  - git config --global user.email "Your email"
+  - git config --global user.name "Your Name"
+  - git commit -m "Deployment of built website"
+  - git push
