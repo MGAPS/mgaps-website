@@ -6,4 +6,4 @@ $SSH_DEPLOY_KEY >> 'id_rsa'
 
 scp -B -r -i ./id_rsa _rendered $REMOTE_DEPLOY_LOCATION
 
-rm 'id_rsa'
+Remote-Item 'id_rsa'
