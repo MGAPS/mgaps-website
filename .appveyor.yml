@@ -39,8 +39,12 @@ environment:
   # This is required because we don't want anyone at MGAPS to have to install
   # the Haskell toolchain and build the website
   # Commits on the source repository will be automatically reflected
+  #
+  # Note: this access token has been encrypted using Appveyor's
+  # YAML encrypt:
+  #   https://ci.appveyor.com/tools/encrypt
   access_token:
-    secure: 4f631c4f7acb4b97b2acc9ca2334891e3bc41350
+    secure: EnBHumjphKgr9azjOM87DXfUVzc4DE0B5jgHRKkzcwPd7Bl1ft3PabCKOkXDa/2T
 
 matrix:
   fast_finish: true
