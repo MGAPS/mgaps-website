@@ -67,7 +67,7 @@ nonJpgImages = ( "images/*/**" .||. "images/*" ) .&&. complement jpgImages
 quickLinks = "static/quick-links/*.md"
 
 config :: Configuration
-config = defaultConfiguration { destinationDirectory = "_rendered" }
+config = defaultConfiguration { destinationDirectory = "docs" }
 
 --------------------------------------------------------------------------------
 main :: IO ()
