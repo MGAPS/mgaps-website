@@ -14,7 +14,14 @@ If you have any questions, feel free to [raise an issue](https://github.com/MGAP
 
 ## Deployment
 
-[TODO]
+Deployment of the website is done on a build server provided by Appveyor. Simply commit the changes to the website source (in `static/`, `people/`, etc.). Once changes on the master repository are detected, the following will happen: 
+
+1. the build server will clone the content of the website;
+2. install the Haskell toolchain;
+3. build the compiler `mgaps-website`;
+4. Use `mgaps-website` to render the website in `docs/`
+5. check that all internal links are valid;
+6. Commit the changes in `docs/` back to the master repository.
 
 ## The website source
 
