@@ -83,16 +83,16 @@ on_success:
 - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
 
 # An identity is required, even if it is trivial
+- git config --global user.name "Appveyor automatic build"
+- git config --global user.email "<>"
+
+# Only commit the built website, which is located in docs/
 # Note that the commit message contains [skip appveyor] so that the build
 # does not trigger another build recursively
 # See here: 
 #   https://www.appveyor.com/docs/how-to/filtering-commits/#skip-commits
-- git config --global user.name "[skip appveyor] Appveyor automatic build"
-- git config --global user.email "<>"
-
-# Only commit the built website, which is located in docs/
 - git checkout -b temp
-- git commit --allow-empty -uno -m "Deployment of built website" -- docs
+- git commit --allow-empty -uno -m "[skip appveyor] Deployment of built website" -- docs
 
 # Merge temporary branch into master
 # then delete temporary branch
