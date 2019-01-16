@@ -19,8 +19,13 @@ cache:
 
 # Skipping commits affecting specific files (GitHub only).
 # More details here: /docs/appveyor-yml
+#
+# NOTE: it is extremely important that file changes in docs/
+#       be ignored, since otherwise it can lead to infinite 
+#       recursive builds
 skip_commits:
   files:
+    - 'docs/*'
     - '*.md'
 
 clone_folder: "c:\\stack"
