@@ -74,7 +74,8 @@ test_script:
 on_success:
   - git config --global credential.helper store
   - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-  - git config --global user.email "Your email"
-  - git config --global user.name "Your Name"
-  - git commit -m "Deployment of built website"
-  - git push
+  - git config --global user.name "Appveyor automatic build"
+  - git add
+  # Only commit the built website, which is located in docs/
+  - git commit -m "Deployment of built website" -- docs
+  - git push origin master
