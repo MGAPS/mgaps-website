@@ -91,6 +91,6 @@ on_success:
 # changes in this folder do not trigger an Appveyor build
 # Otherwise, infinitely recursive builds will occur
 - git checkout master
-- git commit -uno -m "Deployment of built website" -- docs
+- git commit --allow-empty -uno -m "Deployment of built website" -- docs
 - git status -uno
 - git push origin master
