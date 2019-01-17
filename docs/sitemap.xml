@@ -154,13 +154,6 @@
   </url>
 
   <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2018-12-01-new-website.html</loc>
-    <lastmod>2018-12-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>http://www.physics.mcgill.ca/mgaps//announcements/2018-11-29-example2.html</loc>
     <lastmod>2018-11-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -170,6 +163,13 @@
   <url>
     <loc>http://www.physics.mcgill.ca/mgaps//announcements/2018-11-29-example3.html</loc>
     <lastmod>2018-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2018-12-01-new-website.html</loc>
+    <lastmod>2018-01-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
