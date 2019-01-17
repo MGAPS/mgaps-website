@@ -2,7 +2,7 @@
 
 Build status: [![Build status](https://ci.appveyor.com/api/projects/status/rcf0r73ne483csp9?svg=true)](https://ci.appveyor.com/project/LaurentRDC/mgaps-website)
 
-This repository hosts the source material and code for the newest version of the MGAPS website.
+This repository hosts the source material and code for the newest version of the MGAPS website, [visible here](https://mgaps.physics.mcgill.ca).
 
 ## The MGAPS website compiler
 
