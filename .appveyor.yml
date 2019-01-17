@@ -97,7 +97,7 @@ on_success:
 # then delete temporary branch
 - git checkout master
 - git pull
-- git merge temp
+- git merge temp -m "[skip appveyor] Merging temp branch"
 - git branch -d temp
 
 # Push back to origin
