@@ -247,4 +247,6 @@ Simply commit the changes to the website source (in `static/`, `people/`, `annou
 4. `mgaps-website` will be used to render the website in `docs/`
 6. the changes in `docs/` will be committed back to the master repository.
 
-Manual modification of the `docs/` repository will probably disappear.
+### Manual deployment
+
+Manual modification of the `docs/` repository will probably disappear, because the automated build will overwrite on any file. If you want to __bypass__ the automated builds, make sure that your Git commit starts with `[skip ci]` (skip continuous integration) so that the automated build process is skipped. This behavior is described [here](https://www.appveyor.com/docs/how-to/filtering-commits/#skip-commits)
