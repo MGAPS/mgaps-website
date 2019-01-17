@@ -20,6 +20,7 @@ import           Text.Pandoc.Walk            (walkM)
 import           Text.Pandoc.Definition      (Pandoc)
 
 import           System.IO
+import           System.FilePath             (takeFileName)
 
 import qualified Data.ByteString.Lazy   as B -- Must use lazy bytestrings because of renderHTML
 import           Text.Blaze.Html.Renderer.Utf8  (renderHtml)
@@ -67,7 +68,22 @@ nonJpgImages = ( "images/*/**" .||. "images/*" ) .&&. complement jpgImages
 quickLinks = "static/quick-links/*.md"
 
 config :: Configuration
-config = defaultConfiguration { destinationDirectory = "docs" }
+config = defaultConfiguration { 
+    destinationDirectory = "docs" 
+    ignoreFile = ignoreFile' 
+    }
+    where
+        -- For GitHub redirect, a file names "CNAME" must be ignored
+        ignoreFile' "CNAME" = True
+        -- Remaining of this function is the default Hakyll behavior
+        ignoreFile' path
+            | "."    `isPrefixOf` fileName = True
+            | "#"    `isPrefixOf` fileName = True
+            | "~"    `isSuffixOf` fileName = True
+            | ".swp" `isSuffixOf` fileName = True
+            | otherwise                    = False
+          where
+            fileName = takeFileName path
 
 --------------------------------------------------------------------------------
 main :: IO ()
@@ -82,7 +98,7 @@ main = do
     B.writeFile "templates/default.html" template
 
     hakyllWith config $ do
-
+        
         match "css/*" $ do
             route   idRoute
             compile compressCssCompiler
