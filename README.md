@@ -12,17 +12,6 @@ This compiler takes source material and turns it into a static website, automati
 
 If you have any questions, feel free to [raise an issue](https://github.com/MGAPS/mgaps-website/issues/new).
 
-## Deployment
-
-Deployment of the website is done on a build server provided by Appveyor. Simply commit the changes to the website source (in `static/`, `people/`, etc.). Once changes on the master repository are detected, the following will happen: 
-
-1. the build server will clone the content of the website;
-2. install the Haskell toolchain;
-3. build the compiler `mgaps-website`;
-4. Use `mgaps-website` to render the website in `docs/`
-5. check that all internal links are valid;
-6. Commit the changes in `docs/` back to the master repository.
-
 ## The website source
 
 The `mgaps-website` compiler expects certain things from your website source. You need at least:
@@ -246,3 +235,16 @@ Checking file _rendered/events.html
 
 The rendered website should be checked before publishing!
 
+## Deployment
+
+__Deployment of the website is automated.__
+
+Simply commit the changes to the website source (in `static/`, `people/`, `announcements/`, etc.). Once changes on the master repository are detected, the following will happen: 
+
+1. A build server (provided by Appveyor) will clone the content of the website;
+2. the Haskell toolchain will be installed;
+3. the compiler `mgaps-website` will be built;
+4. `mgaps-website` will be used to render the website in `docs/`
+6. the changes in `docs/` will be committed back to the master repository.
+
+Manual modification of the `docs/` repository will probably disappear.
