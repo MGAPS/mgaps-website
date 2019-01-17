@@ -4,7 +4,7 @@
 
 
 import           Control.Monad               (liftM)
-import           Data.List                   (sortBy)
+import           Data.List                   (sortBy, isPrefixOf, isSuffixOf)
 import           Data.Maybe                  (fromMaybe)
 import           Data.Ord                    (comparing)
 import           Hakyll
@@ -67,23 +67,12 @@ jpgImages = "images/*.jpg" .||. "images/*/**.jpg" .||. "images/*.jpeg" .||. "ima
 nonJpgImages = ( "images/*/**" .||. "images/*" ) .&&. complement jpgImages
 quickLinks = "static/quick-links/*.md"
 
+-- MGAPS website configuration
+-- The destination directory ("docs/") is required by Github Pages
 config :: Configuration
 config = defaultConfiguration { 
-    destinationDirectory = "docs" 
-    ignoreFile = ignoreFile' 
+      destinationDirectory = "docs"  
     }
-    where
-        -- For GitHub redirect, a file names "CNAME" must be ignored
-        ignoreFile' "CNAME" = True
-        -- Remaining of this function is the default Hakyll behavior
-        ignoreFile' path
-            | "."    `isPrefixOf` fileName = True
-            | "#"    `isPrefixOf` fileName = True
-            | "~"    `isSuffixOf` fileName = True
-            | ".swp" `isSuffixOf` fileName = True
-            | otherwise                    = False
-          where
-            fileName = takeFileName path
 
 --------------------------------------------------------------------------------
 main :: IO ()
@@ -98,7 +87,14 @@ main = do
     B.writeFile "templates/default.html" template
 
     hakyllWith config $ do
-        
+
+        -- It is important that CNAME be in docs
+        -- This allows for redirecting the Github Pages to 
+        -- a McGill domain
+        match "CNAME" $ do
+            route   idRoute
+            compile copyFileCompiler
+
         match "css/*" $ do
             route   idRoute
             compile compressCssCompiler
