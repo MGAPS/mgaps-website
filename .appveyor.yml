@@ -25,7 +25,6 @@ cache:
 #       recursive builds
 skip_commits:
   files:
-    - 'docs/*'
     - '*.md'
 
 clone_folder: "c:\\stack"
@@ -74,7 +73,7 @@ test_script:
 
 # On success, we commit the built website (in the docs/ folder) back to github
 # This is so that it can be visible as a GitHub page.
-# The following script is taken verbatim from Appveyor documentation:
+# Here is more information about committing from an Appveyor build worker:
 #   https://www.appveyor.com/docs/how-to/git-push/#creating-github-personal-access-token
 on_success:
 
