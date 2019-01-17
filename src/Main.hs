@@ -81,9 +81,6 @@ main = do
     let template = renderHtml $ mkDefaultTemplate schema ""
     B.writeFile "templates/default.html" template
 
-    -- Generate the aknowledgement 
-    writeFile "static/about-this-website.md" aknowledgement
-
     hakyllWith config $ do
 
         match "css/*" $ do
@@ -272,19 +269,3 @@ pandocCompiler_ = do
 -- Move content from static/ folder to base folder
 staticRoute :: Routes
 staticRoute = (gsubRoute "static/" (const ""))
-
--- Aknowledgement page
-aknowledgement :: String
-aknowledgement = unlines [
-      "---"
-    , "title: About this website"
-    , "---"
-    , ""
-    , "This website was created by [Laurent P. René de Cotret](http://www.physics.mcgill.ca/~decotret), using many open-source technologies:"
-    , ""
-    , "* Cascading style sheet components are provided by the [Bulma project](https://bulma.io/)"
-    , "* Icons are provided by the [Font Awesome project](https://fontawesome.com/)"
-    , "* Website compiler is built on top of the [Hakyll library](http://hackage.haskell.org/package/hakyll)"
-    , ""
-    , "Source code and content is available on [GitHub](https://github.com/MGAPS/mgaps-website)."
-    ]
