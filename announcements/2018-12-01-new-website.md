@@ -1,6 +1,6 @@
 ---
 title: MGAPS has a new website!
-date: 2018-12-01
+date: 2018-01-17
 summary: This is the summary of this announcement.
 ---
 
