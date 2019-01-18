@@ -8,7 +8,7 @@ import           Data.List                   (sortBy, isPrefixOf, isSuffixOf)
 import           Data.Maybe                  (fromMaybe)
 import           Data.Ord                    (comparing)
 import           Hakyll
-import           Hakyll.Images               (compressJpgCompiler)
+import           Hakyll.Images               (loadImage, compressJpgCompiler, scaleImageCompiler)
 
 -- Hakyll can trip on characters like apostrophes
 -- https://github.com/jaspervdj/hakyll/issues/109
@@ -102,7 +102,8 @@ main = do
         -- JPG images are special: they can be compressed
         match jpgImages $ do
             route   idRoute
-            compile (compressJpgCompiler 50)
+            compile $ loadImage 
+                >>= (compressJpgCompiler 50)
         
         -- Most other things can be copied directly
         match (nonJpgImages .||. "js/*" .||. "files/**") $ do
