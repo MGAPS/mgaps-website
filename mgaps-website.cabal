@@ -2,7 +2,7 @@ name:                mgaps-website
 version:             1.0.0.0
 -- synopsis:
 -- description:
-homepage:            https://github.com/LaurentRDC/mgaps-website#readme
+homepage:            https://github.com/MGAPS/mgaps-website#readme
 license:             BSD3
 license-file:        LICENSE
 author:              Laurent P. René de Cotret
@@ -22,7 +22,7 @@ executable mgaps-website
   build-depends:       base             >= 4.8  && < 5,
                        filepath         >= 1.0  && < 2.0,
                        hakyll           >= 4    && < 5,
-                       hakyll-images    >= 0.3,
+                       hakyll-images    >= 0.4.1,
                        pandoc           >= 2.2  && < 3,
                        pandoc-pyplot    >= 1.1  && < 2,
                        pandoc-types     >= 1.17 && < 2,
