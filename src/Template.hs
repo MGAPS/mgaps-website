@@ -6,14 +6,14 @@ module Template ( mkDefaultTemplate
                 , NavigationLink(..)
                 ) where
 
-import Data.List (intersperse)
-import Control.Monad                (forM_)
-import Text.Blaze.Html5             as H
-import Text.Blaze.Html5.Attributes  as A
+import           Control.Monad               (forM_)
+import           Data.List                   (intersperse)
+import           Text.Blaze.Html5            as H
+import           Text.Blaze.Html5.Attributes as A
 
-import Text.Blaze                    (toValue, toMarkup)
+import           Text.Blaze                  (toMarkup, toValue)
 
-fontAwesomeURL = "https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+fontAwesomeURL = "https://use.fontawesome.com/releases/v5.2.0/css/all.css"
 bulmaURL = "/css/mgaps-style.css"
 
 type Icon = String
@@ -31,18 +31,18 @@ socialLinks :: [SocialLink]
 socialLinks = [ ("fab fa-facebook", "https://www.facebook.com/OfficialMGAPS",    "Follow us on Facebook") ]
 
 styleSheets :: [AttributeValue]
-styleSheets = 
+styleSheets =
     [ bulmaURL
     , fontAwesomeURL
     ]
 
 -- Wrap the content of a page with a table of content
 tocTemplate :: H.Html
-tocTemplate = do 
+tocTemplate = do
     H.div ! class_ "message is-link" $ do
         H.div ! class_ "message-header" $
             H.p $ "On this page:"
-        
+
         H.div ! class_ "message-body" $
             H.p $ "$toc$"
 
@@ -66,18 +66,18 @@ navigationBar :: Schema -> H.Html
 navigationBar links = H.section ! class_ "hero is-primary" $ do
     --------------------------------------------------------------------------
     H.div ! class_ "hero-head" $
-        H.nav ! class_ "navbar is-primary" $ 
+        H.nav ! class_ "navbar is-primary" $
             H.div ! class_ "container" $ do
                 H.div ! class_ "navbar-brand" $ do
                     H.a ! class_ "navbar-item" ! href "/index.html" $ H.strong $ "MGAPS"
-                    
+
                     -- toggleBurger function defined in js/navbar-onclick.js
                     H.span ! class_ "navbar-burger burger" ! A.id "burger" ! A.onclick "toggleBurger()"$ do
                         H.span $ mempty
                         H.span $ mempty
                         H.span $ mempty
-                    
-                H.div ! class_ "navbar-menu" ! A.id "navbarMenu" $ 
+
+                H.div ! class_ "navbar-menu" ! A.id "navbarMenu" $
                     H.div ! class_ "navbar-start" $
                         forM_ links renderLink
     --------------------------------------------------------------------------
@@ -101,7 +101,7 @@ navigationBar links = H.section ! class_ "hero is-primary" $ do
                     H.a ! class_ "navbar-link" $ toMarkup title
                     H.div ! class_ "navbar-dropdown is-boxed" $ -- is-boxed makes it easier to see hovering if navbar is transparent
                         forM_ sublinks renderLink
-        
+
 
 defaultFooter :: String -> H.Html
 defaultFooter s = H.footer ! class_ "footer" $
@@ -110,7 +110,7 @@ defaultFooter s = H.footer ! class_ "footer" $
         H.p $ mconcat [
               "For questions and comments regarding this website, contact "
             , H.a ! href "/people.html#VP Communications" $ "VP Communications"
-            , "." 
+            , "."
             ]
         H.p $ mconcat [
             "To know more about this how this site was created, click "
@@ -119,7 +119,7 @@ defaultFooter s = H.footer ! class_ "footer" $
             ]
 
     where
-        renderLink (icon, link, name) = do 
+        renderLink (icon, link, name) = do
             H.span ! class_ "icon" $ H.i ! class_ (toValue icon) $ mempty
             H.a ! target "_blank" ! href (toValue link) $ toMarkup name
 
