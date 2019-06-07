@@ -4,11 +4,32 @@ Build status: [![Build status](https://ci.appveyor.com/api/projects/status/rcf0r
 
 This repository hosts the source material and code for the newest version of the MGAPS website, [visible here](https://mgaps.physics.mcgill.ca).
 
+## Table of contents
+
+-   [The MGAPS website compiler](#the-mgaps-website-compiler)
+-   [The website source](#the-website-source)
+    -   [Updating the front page](#updating-the-front-page)
+    -   [Updating static content](#updating-static-content)
+    -   [Updating profiles](#updating-profiles)
+    -   [Updating announcements](#updating-announcements)
+    -   [Updating quick links](#updating-quick-links)
+    -   [Updating files](#updating-files)
+    -   [Updating images](#updating-images)
+-   [What cannot be changed](#what-cannot-be-changed)
+-   [Local Usage](#local-usage)
+    -   [Building the compiler
+        locally](#building-the-compiler-locally)
+    -   [Available commands](#available-commands)
+    -   [Building the website](#building-the-website)
+    -   [Testing the website](#testing-the-website)
+-   [Deployment](#deployment)
+    -   [Manual deployment](#manual-deployment)
+
 ## The MGAPS website compiler
 
 The MGAPS website is built from source files by a compiler, `mgaps-website`.
 
-This compiler takes source material and turns it into a static website, automatic as many tasks as possible for easiest maintainability. The resulting website works on both desktop _and_ mobile.
+This compiler takes source material and turns it into a static website, automating as many tasks as possible for easiest maintainability. The resulting website works on both desktop _and_ mobile.
 
 If you have any questions, feel free to [raise an issue](https://github.com/MGAPS/mgaps-website/issues/new).
 
