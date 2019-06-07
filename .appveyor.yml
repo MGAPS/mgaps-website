@@ -19,10 +19,6 @@ cache:
 
 # Skipping commits affecting specific files (GitHub only).
 # More details here: /docs/appveyor-yml
-#
-# NOTE: it is of paramount importance that file changes in docs/
-#       be ignored, since otherwise it can lead to infinitely
-#       recursive builds
 skip_commits:
   files:
     - '*.md'
@@ -68,7 +64,7 @@ test_script:
 # At this point, a new executable exists: `mgaps-website`.
 # We can use it to build the website from scratch ('rebuild')
 # and then check that all links are live ('check') 
-- stack exec mgaps-website rebuild
+- stack exec -- mgaps-website rebuild
 - stack exec -- mgaps-website check
 
 # On success, we commit the built website (in the docs/ folder) back to github
