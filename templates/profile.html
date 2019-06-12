@@ -18,13 +18,14 @@
                 <p class="subtitle is-4">$position$</p>
             </div>
         </div>
-        <div class="content">
-            <p>
-                $body$
-            </p>
-            $if(email)$
-            <p> email: <a href="mailto:$email$">$email$</a></p>
-            $endif$
-        </div>
+    </div>
+    <!-- Separate card-content section so that images do not overlap text -->
+    <div class="card-content">
+        <p>
+            $body$
+        </p>
+        $if(email)$
+        <p> email: <a href="mailto:$email$">$email$</a></p>
+        $endif$
     </div>
 </div>
