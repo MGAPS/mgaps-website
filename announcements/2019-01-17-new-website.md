@@ -1,11 +1,7 @@
 ---
 title: MGAPS has a new website!
 date: 2019-01-17
-summary: This is the summary of this announcement.
+summary: The website is up and running and there are many more updates to come!
 ---
 
-Mauris in lorem nisl. Maecenas tempus facilisis ante, eget viverra nisl
-tincidunt et. Donec turpis lectus, mattis ac malesuada a, accumsan eu libero.
-Morbi condimentum, tortor et tincidunt ullamcorper, sem quam pretium nulla, id
-convallis lectus libero nec turpis. Proin dapibus nisi id est sodales nec
-ultrices tortor pellentesque.
+Thanks to Laurent René de Cotret (github:LaurentRDC), we have a fabulous new website! As you are reading this you already know this fact. This will be the place you can find all of our official information in one place. You can also follow us on [Facebook](https://www.facebook.com/OfficialMGAPS/) to get notifcations of events and other updates!

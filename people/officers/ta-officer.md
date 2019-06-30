@@ -1,5 +1,5 @@
 ---
-name: Cesar Rodrigues
-email: cesar.rodriguezrosenblueth@mail.mcgill.ca
+name: Lena Engström
+email: lena.engstrom@mail.mcgill.ca
 position: TA Officer
 ---
