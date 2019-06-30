@@ -1,6 +1,6 @@
 ---
-name: Hannah Wakeling
-email: hannah.wakeling@mail.mcgill.ca
+name: Thomas Rademaker
+email: thomas.rademaker@mail.mcgill.ca
 position: RTech and Computing Officer
 ---
 

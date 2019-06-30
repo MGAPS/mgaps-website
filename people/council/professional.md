@@ -1,6 +1,6 @@
 ---
-name: Matthew Muscat
-email: matthew.muscat@mail.mcgill.ca
+name: Melissa Medina Peregrina
+email: melissa.medinaperegrina@mail.mcgill.ca
 position: VP Professional Development
 ---
 

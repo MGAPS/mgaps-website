@@ -1,6 +1,6 @@
 ---
-name: Adrian Solyom
-email: adrian.solyom@mail.mcgill.ca
+name: Christina Nelson
+email: christina.nelson@mail.mcgill.ca
 position: VP Finance
 ---
 

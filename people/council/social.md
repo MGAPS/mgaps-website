@@ -1,8 +1,8 @@
 ---
-name: Benjamin Dringoli
-email: dringoli@physics.mcgill.ca
+name: Matthew Frick
+email: matthew.frick@mail.mcgill.ca
 position: VP Social
-picture: images/profiles/benjamin-dringoli.jpg
+picture:
 ---
 
 __Why social events are important__: When pursuing an advanced degree occasions to meet people from other fields are scarce, but it is valuable to make connections between fields and between theory and experiment. It's also important to have fun!

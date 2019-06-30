@@ -1,6 +1,6 @@
 ---
-name: John McGowan
-email: john.mcgowan@mail.mcgill.ca
+name: Talia Martz-Oberlander
+email: talia.martz-oberlander@mail.mcgill.ca
 position: PGSS Representative
 ---
 

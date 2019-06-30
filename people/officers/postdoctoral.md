@@ -1,6 +1,6 @@
 ---
-name: Yannik Fontana
-email: yannik.fontana@mail.mcgill.ca
+name: Jan Pohls
+email: jan.pohls@mcgill.ca
 position: Postdoctoral Officer
 ---
 
