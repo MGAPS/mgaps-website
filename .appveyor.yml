@@ -23,6 +23,13 @@ skip_commits:
   files:
     - '*.md'
 
+# Only build the master branch (which is also the publication branch)
+# This means that pull requests must be tested locally.
+branches:
+  only:
+    - master
+      
+
 clone_folder: "c:\\stack"
 environment:
   global:
