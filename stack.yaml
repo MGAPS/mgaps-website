@@ -38,8 +38,8 @@ packages:
 # using the same syntax as the packages field.
 # (e.g., acme-missiles-0.3)
 extra-deps:
-- hakyll-images-0.4.3
-- pandoc-pyplot-2.1.4.0
+- hakyll-images-0.4.4
+- pandoc-pyplot-2.1.5.0
 
 # Override default flag values for local packages and extra-deps
 # flags: {}
