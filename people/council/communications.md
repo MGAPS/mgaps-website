@@ -2,7 +2,7 @@
 name: Hannah Wakeling
 email: hannah.wakeling@mail.mcgill.ca
 position: VP Communications
-picture: 
+picture: images/profiles/hannah-wakeling.jpg
 ---
 
-On top of doing the usual secretary duties such as taking minutes and attendance at the GAs and general bookkeeping, the VP communications is in charge of keeping the MGAPS website and social media pages up to date, and adds another voice to the various organization meetings.
+The VP communications is in charge of the MGAPS website, advertising MGAPS events, organising social media, creating informative posters and communicating with you all in general. Follow MGAPS on [Facebook](https://www.facebook.com/OfficialMGAPS/), [Twitter](https://twitter.com/OfficialMGAPS) and [Instagram](https://www.instagram.com/officialmgaps/)! They also take on secretarial duties such as taking minutes and attendance at the GAs.
