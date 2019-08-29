@@ -2,6 +2,7 @@
 name: Melissa Medina Peregrina
 email: melissa.medinaperegrina@mail.mcgill.ca
 position: VP Professional Development
+picture: images/profiles/melissa-medina-peregrina.jpg
 ---
 
 A large part of physics students leaves academia after graduation, but starts their job search too late and uses poor strategies relying solely on their personal network. My job is to coordinate action in  providing awareness of earlier career planning and professional development while still in grad school. 
