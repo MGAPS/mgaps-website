@@ -16,8 +16,10 @@ contact: VP Social
     if tags are indented. Therefore, don't indent!
 -->
 <div class="section is-hidden-mobile has-text-centered">
-<iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=ctpaa142ofvam9td927eu990p4%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FToronto" style="border-width:0" width="700" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23D50000&amp;ctz=America%2FToronto&amp;src=Y3RwYWExNDJvZnZhbTl0ZDkyN2V1OTkwcDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23882f00" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
+
+Follow our google calendar [here](https://calendar.google.com/calendar/embed?src=ctpaa142ofvam9td927eu990p4%40group.calendar.google.com&ctz=America%2FToronto)!
 
 MGAPS organizes several subsidized events per semester:
 
@@ -25,18 +27,21 @@ In the Fall semester:
 
 * Welcome 5 à 7 at Thomson House
 * Departmental BBQ - held in early September
+* Evening programming courses for physicists
 * Physics annual cocktail party - a semi-formal held at Thomson House
 * Afternoon Cake Events
-* Games night at Thomson House
+* Board games nights
+* Wellness events
+* Potlucks 
 * Hockey nights (come cheer for the physics hockey team, and enjoy a drink at BdP afterwards)
 
 In the Winter semester:
 
 * Thomson house party 
-* MSPS Talent Show 
-* PGSS Sugar Shack (in April)
+* MSPS Talent Show
+* PGSS Sugar Shack
 * Hockey nights (come cheer for the physics hockey team, and enjoy a drink at BdP afterwards)
-* Post Prelim' TH party (in May)
+* Post Prelim'Exam party/BBQ (in May)
 * MGAPS winter retreat
 
 In the Summer months:
