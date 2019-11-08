@@ -151,6 +151,7 @@ To create a new job offer, add a markdown file to the directory `jobs/`. `mgaps-
 
 * title (required): title of the offer;
 * employer (required): Employer;
+* contact (required): Contact information;
 * date (required): date of the offer __in the YYYY-MM-DD format__;
 * updated (optional): date of the last update to the offer __in the YYYY-MM-DD format__;
 * summary (optional): summary of the offer. This summary will appear on front page `index.html`.
@@ -161,6 +162,7 @@ Here's an example of a job offer:
 ---
 title: Lecturer
 employer: McGill University
+contact: Example <example@example.com>
 date: 2019-11-29
 updated: 2019-12-05
 summary: Lecturer for U0 students in STEM.
