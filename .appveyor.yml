@@ -93,6 +93,7 @@ on_success:
 # See here: 
 #   https://www.appveyor.com/docs/how-to/filtering-commits/#skip-commits
 - git checkout -b temp
+- git add -A # track all new files
 - git commit --allow-empty -uno -m "[skip appveyor] Deployment of built website" -- docs
 
 # Merge temporary branch into master
