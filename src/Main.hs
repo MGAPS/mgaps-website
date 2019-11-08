@@ -63,6 +63,9 @@ schema = [
         , NavLink "/program/finances.html"      "Finances"
         , NavLink "/program/new_students.html"  "New Students"
     ]
+    , Waypoint "Resources" [
+          NavLink "/resources/jobs.html"        "Job opportunities"
+    ]
     ]
 
 -- We match images down to two levels
@@ -125,11 +128,21 @@ main = do
         --------------------------------------------------------------------------------
         -- Compile announcements
         -- This will create a new page per announcement
-        match ("announcements/*") $ do
+        match ("announcements/*.md") $ do
             route $ setExtension "html"
             compile $ pandocCompiler_
                 >>= loadAndApplyTemplate "templates/ann.html"     annCtx
                 >>= loadAndApplyTemplate "templates/default.html" annCtx
+                >>= relativizeUrls
+        
+        --------------------------------------------------------------------------------
+        -- Compile job opportunities
+        -- This will create a new page per job offer
+        match ("jobs/*.md") $ do
+            route $ setExtension "html"
+            compile $ pandocCompiler_
+                >>= loadAndApplyTemplate "templates/job.html"     jobCtx
+                >>= loadAndApplyTemplate "templates/default.html" jobCtx
                 >>= relativizeUrls
 
         --------------------------------------------------------------------------------
@@ -178,6 +191,25 @@ main = do
                     >>= relativizeUrls
 
         --------------------------------------------------------------------------------
+        -- Create a page containing all job offers
+        create ["resources/jobs.html"] $ do
+            route idRoute
+            compile $ do
+                jobs <- recentFirst =<< loadAll "jobs/*.md"
+                -- Context for jobs list
+                let jobListCtx = mconcat [
+                          listField "jobs" jobCtx (return jobs)
+                        , constField "title" "All jobs opportunities"
+                        , defaultContext
+                        ]
+
+                makeItem ""
+                    >>= loadAndApplyTemplate "templates/jobs-list.html" jobListCtx
+                    >>= loadAndApplyTemplate "templates/default.html"   jobListCtx
+                    >>= relativizeUrls
+
+
+        --------------------------------------------------------------------------------
         -- Compile all quick links before inserting them on the home page
         match quickLinks $ compile $ pandocCompiler_ >>= relativizeUrls
 
@@ -188,8 +220,10 @@ main = do
             compile $ do
                 quickLinks' <- loadAll quickLinks
                 announcements <- fmap (take 5) . recentFirst =<< loadAll "announcements/*"
+                jobs  <- fmap (take 3) . recentFirst =<< loadAll "jobs/*"
                 let indexCtx = mconcat [
                           listField "announcements" annCtx (return announcements)
+                        , listField "jobs" jobCtx (return jobs)
                         , listField "quick-links" defaultContext (return quickLinks')
                         , defaultContext
                         ]
@@ -224,6 +258,12 @@ annCtx :: Context String
 annCtx = mconcat [ dateField "date" "%Y-%m-%d"
                  , defaultContext
                  ]
+
+--------------------------------------------------------------------------------
+-- | Context for job opportunities
+jobCtx :: Context String
+jobCtx = annCtx
+
 
 -- Sort lists of profiles by position
 -- most importantly, president should be first

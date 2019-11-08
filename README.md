@@ -12,6 +12,7 @@ This repository hosts the source material and code for the newest version of the
     -   [Updating static content](#updating-static-content)
     -   [Updating profiles](#updating-profiles)
     -   [Updating announcements](#updating-announcements)
+    -   [Updating jobs offers](#updating-job-offers)
     -   [Updating quick links](#updating-quick-links)
     -   [Updating files](#updating-files)
     -   [Updating images](#updating-images)
@@ -40,6 +41,7 @@ The `mgaps-website` compiler expects certain things from your website source. Yo
 * A `static/` directory, containing static website content;
     * A `static/quick-links/` directory containing quick links information;
 * An `announcements/` directory containing announcements (more on this later);
+* A `jobs/` directory containing job offers (more on this later);
 * A `template/` directory containing HTML templates;
 * An `image/` directory containing images;
     * An `image/profile/` directory containing profile pictures;
@@ -142,6 +144,32 @@ id est sodales nec ultrices tortor pellentesque.
 ```
 
 Announcements will be sorted by date. Only the most recent annoucements will be shown on the front page (`index.html`), but all announcements are visible at `announcements.html`. This page is linked to the front page.
+
+### Updating jobs offers
+
+To create a new job offer, add a markdown file to the directory `jobs/`. `mgaps-website` will create one job offer per markdown file. A job offer file can have the following metadata:
+
+* title (required): title of the offer;
+* employer (required): Employer;
+* date (required): date of the offer __in the YYYY-MM-DD format__;
+* updated (optional): date of the last update to the offer __in the YYYY-MM-DD format__;
+* summary (optional): summary of the offer. This summary will appear on front page `index.html`.
+
+Here's an example of a job offer:
+
+```markdown
+---
+title: Lecturer
+employer: McGill University
+date: 2019-11-29
+updated: 2019-12-05
+summary: Lecturer for U0 students in STEM.
+---
+
+Here are all the details concerning this opportunity.
+```
+
+Job opportunities will be sorted by date.
 
 ### Updating quick links
 
