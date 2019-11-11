@@ -12,7 +12,7 @@ This repository hosts the source material and code for the newest version of the
     -   [Updating static content](#updating-static-content)
     -   [Updating profiles](#updating-profiles)
     -   [Updating announcements](#updating-announcements)
-    -   [Updating jobs offers](#updating-job-offers)
+    -   [Updating job offers](#updating-job-offers)
     -   [Updating quick links](#updating-quick-links)
     -   [Updating files](#updating-files)
     -   [Updating images](#updating-images)
@@ -145,7 +145,7 @@ id est sodales nec ultrices tortor pellentesque.
 
 Announcements will be sorted by date. Only the most recent annoucements will be shown on the front page (`index.html`), but all announcements are visible at `announcements.html`. This page is linked to the front page.
 
-### Updating jobs offers
+### Updating job offers
 
 To create a new job offer, add a markdown file to the directory `jobs/`. `mgaps-website` will create one job offer per markdown file. A job offer file can have the following metadata:
 
