@@ -154,6 +154,13 @@
   </url>
 
   <url>
+    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2020-01-27-WinterGA.html</loc>
+    <lastmod>2020-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>http://www.physics.mcgill.ca/mgaps//announcements/2019-10-22-Nobel-Lecture.html</loc>
     <lastmod>2019-10-22</lastmod>
     <changefreq>weekly</changefreq>
