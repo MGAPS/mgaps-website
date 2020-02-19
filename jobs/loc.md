@@ -1,10 +1,10 @@
 ---
-Title: Lecturer
-Employer: McGill University
-Apply: example@example.com
-Date: 2019-11-29
-Updated: 2019-12-05
-summary: Lecturer for U0 students in STEM.
+Title: Postdoc
+Employer: Weizmann Institute
+Apply: https://labs.inspirehep.net/jobs/1764292
+Date: 2
+Updated: 2020-2-19
+Info: High-Energy, Astroparticle Physics and Detector Physics, and combines unique R&D work in its local laboratory with participation in the international XENON program. 
 ---
 
 
