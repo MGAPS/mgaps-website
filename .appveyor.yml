@@ -69,9 +69,9 @@ test_script:
 
 # At this point, a new executable exists: `mgaps-website`.
 # We can use it to build the website from scratch ('rebuild')
-# and then check that all links are live ('check') 
+# and then check that all internal links are live ('check') 
 - stack exec -- mgaps-website rebuild
-- stack exec -- mgaps-website check
+- stack exec -- mgaps-website check --internal-links
 
 # On success, we commit the built website (in the docs/ folder) back to github
 # This is so that it can be visible as a GitHub page.
