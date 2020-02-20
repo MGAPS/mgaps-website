@@ -1,8 +1,8 @@
 ---
-title: Lecturer
-employer: McGill University
-apply: example@example.com
+title: Postdoc
+employer: Berkeley Lab
+apply: https://academicjobsonline.org/ajo/jobs/15261
 date: 2019-11-29
-updated: 2019-12-05
-summary: Lecturer for U0 students in STEM.
+updated: 2020-02-19
+summary:  Lawrence Berkeley National Laboratory Nuclear Science Division
 ---
