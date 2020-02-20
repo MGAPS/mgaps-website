@@ -7,4 +7,3 @@ updated: 2020-02-19
 summary: High-Energy, Astroparticle Physics and Detector Physics, and combines unique R&D work in its local laboratory with participation in the international XENON program. 
 ---
 
-High-Energy, Astroparticle Physics and Detector Physics, and combines unique R&D work in its local laboratory with participation in the international XENON program. 
