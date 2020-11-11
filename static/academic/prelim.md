@@ -3,6 +3,10 @@ title: Preliminary Examination
 contact: VP Academic
 ---
 
+<div class="notification is-warning">
+Due to the ongoing pandemic the prelim is subject to change. The prelim of May 2020 was delayed and now will be held in December 2020. Please contact the VP Academic for more information.
+</div>
+
 The physics preliminary exam is required for completion of a PhD in Physics. It has to be taken within the first year of the PhD program. 
 
 <div class="notification is-warning">
