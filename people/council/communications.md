@@ -1,8 +1,8 @@
 ---
-name: Hannah Wakeling
-email: hannah.wakeling@mail.mcgill.ca
-position: VP Communications
-picture: images/profiles/hannah-wakeling.jpg
+name: Ben Dringoli
+email: benjamin.dringoli@mail.mcgill.ca
+position: MGAPS President
+picture: images/profiles/benjamin-dringoli.jpg
 ---
 
 The VP communications is in charge of the MGAPS website, advertising MGAPS events, organising social media, creating informative posters and communicating with you all in general. Follow MGAPS on [Facebook](https://www.facebook.com/OfficialMGAPS/), [Twitter](https://twitter.com/OfficialMGAPS) and [Instagram](https://www.instagram.com/officialmgaps/)! They also take on secretarial duties such as taking minutes and attendance at the GAs.
