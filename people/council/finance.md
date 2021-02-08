@@ -1,6 +1,6 @@
 ---
-name: Christina Nelson
-email: christina.nelson@mail.mcgill.ca
+name: Matthew Lundy
+email: matthew.lundy@mcgill.ca
 position: VP Finance
 ---
 

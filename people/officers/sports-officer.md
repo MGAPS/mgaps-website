@@ -1,6 +1,6 @@
 ---
-name: Daniel Abarbanel
-email: daniel.abarbanel@mail.mcgill.ca
+name: TBD
+email: TBD
 position: Sports Officer
 ---
 

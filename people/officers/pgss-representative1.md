@@ -1,6 +1,6 @@
 ---
-name: John McGowan
-email: john.mcgowan@mail.mcgill.ca
+name: Matthew Lundy
+email: matthew.lundy@mcgill.ca
 position: PGSS Representative
 ---
 

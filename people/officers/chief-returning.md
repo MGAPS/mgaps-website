@@ -1,5 +1,5 @@
 ---
-name: Adrian Solyom
-email: adrian.solyom@mail.mcgill.ca
+name: Rabea Seybolt
+email: rabea.seyboldt@mcgill.ca
 position: Chief Returning Officer
 ---
