@@ -1,5 +1,5 @@
 ---
-name: Benjamin Dringoli
+name: Ben Dringoli
 email: benjamin.dringoli@mail.mcgill.ca
 position: VP Communications
 picture: images/profiles/benjamin-dringoli.jpg
