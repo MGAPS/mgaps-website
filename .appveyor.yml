@@ -84,8 +84,8 @@ on_success:
 - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
 
 # An identity is required, even if it is trivial
-- git config --global user.name "Appveyor automatic build"
-- git config --global user.email "<>"
+- git config --global user.name "Appveyor automatic build on behalf of L.P. Rene de Cotret"
+- git config --global user.email "laurent.renedecotret@mail.mcgill.ca"
 
 # Only commit the built website, which is located in docs/
 # Note that the commit message contains [skip appveyor] so that the build
