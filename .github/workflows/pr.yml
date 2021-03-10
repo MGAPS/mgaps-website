@@ -1,0 +1,37 @@
+name: Test Pull Request
+
+on:
+  # Publishing from the master branch is done in a different workflow.
+  pull_request:
+
+jobs:
+  build-and-deploy:
+    if: contains(toJson(github.event.commits), '[ci skip]') == false && contains(toJson(github.event.commits), '[skip ci]') == false
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Haskell toolchain
+      uses: haskell/actions/setup@v1
+      with:
+        enable-stack: true
+        stack-version: 'latest'
+
+    - uses: actions/cache@v2
+      name: Cache Haskell build artifacts
+      with:
+        path: ~/.stack
+        key: ${{ runner.os }}-${{ hashFiles('stack.yaml.lock') }}
+
+    - name: Build site compiler
+      run: |
+        stack install --fast
+
+    - name: Build website
+      run: |
+        stack exec -- mgaps-website rebuild
+        
+    - name: Check internal links
+      run: |
+        stack exec -- mgaps-website check --internal-links

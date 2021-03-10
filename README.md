@@ -1,7 +1,5 @@
 # McGill Graduate Association of Physics Students website
 
-Build status: [![Build status](https://ci.appveyor.com/api/projects/status/rcf0r73ne483csp9?svg=true)](https://ci.appveyor.com/project/LaurentRDC/mgaps-website)
-
 This repository hosts the source material and code for the newest version of the MGAPS website, [visible here](https://mgaps.physics.mcgill.ca).
 
 ## Table of contents
@@ -293,12 +291,8 @@ __Deployment of the website is automated.__
 
 Simply commit the changes to the website source (in `static/`, `people/`, `announcements/`, etc.). Once changes on the master repository are detected, the following will happen: 
 
-1. A build server (provided by Appveyor) will clone the content of the website;
+1. A build server (provided by GitHub) will clone the content of the website;
 2. the Haskell toolchain will be installed;
 3. the compiler `mgaps-website` will be built;
-4. `mgaps-website` will be used to render the website in `docs/`
-6. the changes in `docs/` will be committed back to the master repository.
-
-### Manual deployment
-
-Manual modification of the `docs/` repository will probably disappear, because the automated build will overwrite on any file. If you want to __bypass__ the automated builds, make sure that your Git commit starts with `[skip ci]` (skip continuous integration) so that the automated build process is skipped. This behavior is described [here](https://www.appveyor.com/docs/how-to/filtering-commits/#skip-commits)
+4. `mgaps-website` will be used to render the website in `_rendered/`
+6. the changes in `_rendered/` will be committed to appropriate branch.

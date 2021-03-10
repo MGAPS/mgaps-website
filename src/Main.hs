@@ -8,6 +8,7 @@ import           Data.List                       (isPrefixOf, isSuffixOf,
                                                   sortBy)
 import           Data.Maybe                      (fromMaybe)
 import           Data.Ord                        (comparing)
+import qualified Data.Text                       as T
 import           Hakyll
 import           Hakyll.Images                   (compressJpgCompiler,
                                                   loadImage, scaleImageCompiler)
@@ -20,6 +21,7 @@ import           Text.Pandoc.Definition          (Pandoc)
 import           Text.Pandoc.Extensions
 import           Text.Pandoc.Options
 import           Text.Pandoc.Walk                (walkM)
+import qualified Text.Pandoc.Templates           as Template
 
 import           System.FilePath                 (takeFileName)
 import           System.IO
@@ -78,7 +80,7 @@ quickLinks = "static/quick-links/*.md"
 -- The destination directory ("docs/") is required by Github Pages
 config :: Configuration
 config = defaultConfiguration {
-      destinationDirectory = "docs"
+      destinationDirectory = "_rendered"
     }
 
 --------------------------------------------------------------------------------
@@ -298,6 +300,9 @@ pandocCompiler_ = do
     ident <- getUnderlying
     toc <- getMetadataField ident "withtoc"
     tocDepth <- getMetadataField ident "tocdepth"
+    template <- unsafeCompiler $ (either error id) <$> 
+                        Template.compileTemplate mempty (T.pack . St.renderHtml $ tocTemplate)
+
     let extensions = [
             -- Pandoc Extensions: http://pandoc.org/MANUAL.html#extensions
             Ext_implicit_header_references    -- We also allow implicit header references (instead of inserting <a> tags)
@@ -317,7 +322,7 @@ pandocCompiler_ = do
                 writerExtensions = newExtensions
                 , writerTableOfContents = True
                 , writerTOCDepth = read (fromMaybe "3" tocDepth) :: Int
-                , writerTemplate = Just $ St.renderHtml tocTemplate
+                , writerTemplate = Just template
                 }
             Nothing -> defaultHakyllWriterOptions { writerExtensions = newExtensions }
     -- Pandoc filters could be composed, instead of simply `bulmaTransform`

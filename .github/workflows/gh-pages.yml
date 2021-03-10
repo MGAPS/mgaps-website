@@ -1,0 +1,50 @@
+name: GH-Pages
+
+on:
+  # Tests for pull requests are located in a different workflow.
+  push:
+    branches: [master]
+  schedule:
+    # Build the website twice a week, to keep it up-to-date
+    # and keep the cache warm.
+    # See https://crontab.guru/#0_5_*_*_0,4
+    - cron: '0 5 * * 0,4'
+
+jobs:
+  build-and-deploy:
+    if: contains(toJson(github.event.commits), '[ci skip]') == false && contains(toJson(github.event.commits), '[skip ci]') == false
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Haskell toolchain
+      uses: haskell/actions/setup@v1
+      with:
+        enable-stack: true
+        stack-version: 'latest'
+
+    - uses: actions/cache@v2
+      name: Cache Haskell build artifacts
+      with:
+        path: ~/.stack
+        key: ${{ runner.os }}-${{ hashFiles('stack.yaml.lock') }}
+
+    - name: Build site compiler
+      run: |
+        stack install --fast
+
+    - name: Build website
+      run: |
+        stack exec -- mgaps-website rebuild
+        
+    - name: Check internal links
+      run: |
+        stack exec -- mgaps-website check --internal-links
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@4.0.0
+      with:
+        BRANCH: gh-pages
+        FOLDER: _rendered
+        CLEAN: true
