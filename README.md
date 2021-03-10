@@ -56,6 +56,7 @@ The front page will automatically pull recent announcements (described below) as
 
 ### Updating static content
 
+This is where you will edit the pages within the website. The pages can be found under the `static/` directory.
 Static content is written in [Markdown](https://daringfireball.net/projects/markdown/syntax) format. Using this format, you have access to many features, including links, images, bullet lists, tables, code blocks, quotes, and many more.
 
 To update a static page, simply edit the source Markdown file. `mgaps-website` will compile Markdown source to HTML during compilation.
