@@ -13,6 +13,5 @@ Workspace issues can be reported at any time to MGAPS Workspace Officer, whose e
 
 ##### The Rutherford spaces survey report for Fall 2019 is available [here](/files/Rutherford_spaces_survey_report.pdf).
 
-###### We intend to have a page of resources [here](../resources/reports.html) in the future.
 
 [comment]: <> (Commented out as there is no link! For convenience, the form below can be used to report workspace/lab issue. The advantage of this form is that it can be used anonimously, unlike emails. Submissions from this form are processed by MGAPS Workspace Officer.)
