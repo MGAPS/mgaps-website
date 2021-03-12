@@ -66,7 +66,8 @@ schema = [
         , NavLink "/program/new_students.html"  "New Students"
     ]
     , Waypoint "Resources" [
-          NavLink "/resources/jobs.html"        "Job opportunities"
+          NavLink "/resources/resources.html"   "Resources"
+        , NavLink "/resources/jobs.html"        "Job opportunities"
     ]
     ]
 
@@ -194,6 +195,10 @@ main = do
 
         --------------------------------------------------------------------------------
         -- Create a page containing all job offers
+        
+
+        --------------------------------------------------------------------------------
+        -- Create a page containing all job offers
         create ["resources/jobs.html"] $ do
             route idRoute
             compile $ do
@@ -255,7 +260,7 @@ main = do
         match "templates/*" $ compile templateCompiler
 
 --------------------------------------------------------------------------------
--- | Context for annoucements
+-- | Context for announcements
 annCtx :: Context String
 annCtx = mconcat [ dateField "date" "%Y-%m-%d"
                  , defaultContext
