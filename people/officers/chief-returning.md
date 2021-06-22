@@ -1,5 +1,5 @@
 ---
-name: Rabea Seybolt
-email: rabea.seyboldt@mcgill.ca
+name: Melissa Mendes
+email: N/A
 position: Chief Returning Officer
 ---

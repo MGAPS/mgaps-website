@@ -1,6 +1,6 @@
 ---
-name: Lisa Dang
-email: lisa.dang@physics.mcgill.ca
+name: TBD
+email: N/A
 position: VP Professional Development
 ---
 
