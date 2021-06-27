@@ -1,3 +1,2 @@
-sass/bulma/* linguist-vendored=true
-sass/src/* linguist-detectable=false
+sass/*/** linguist-detectable=false
 css/* linguist-detectable=false
