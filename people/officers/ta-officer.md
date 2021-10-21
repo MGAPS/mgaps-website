@@ -4,6 +4,4 @@ email: benjamin.dringoli@mail.mcgill.ca
 position: TA Officer
 ---
 
-As the TA officer I organize the TA team as well as hold events to help physics graduate students to develop as teacher assistant. Among these is the TA day, the training day for new TAs in the beginning of each year. My job is to promote existing resources for TAs, offer a platform to build a community among TAs, and to communicate the needs of TAs to the department.
-
-Contact me if you want to join the TA team or if you have questions/ideas about what we can do to improve teaching at the physics department!
+Here to support you throughout your time here as a TA in physics. Recently I’ve been working with the McGill Office of Science Education (OSE) to develop programs to improve teaching and learning in the physics department. Please come to the TA trainings, read the TA handbook, and let me know if you have any questions regarding your TA-ship! I’m here to help.
