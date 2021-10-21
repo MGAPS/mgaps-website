@@ -1,7 +1,7 @@
 ---
-name: TBD
-email: TBD
+name: Garrett Leverick
+email: garrett.leverick@mail.mcgill.ca
 position: Sports Officer
 ---
 
-It is the job of the sports officer to encourage and facilitate the organization of graduate physics intramural teams. Additionally it is their job to help organize social events surrounding some of these teams, such as the hockey night in physics.
+Do you like being active and playing games with physics friends? I'm here to facilitate just that! I will help you organize an intramural team or any other recreational activity you want to do with your peers. I also might be organizing some events such as Hockey Night in Physics.
