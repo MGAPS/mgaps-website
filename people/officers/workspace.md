@@ -1,6 +1,6 @@
 ---
-name: TBD
-email: N/A
+name: Karishma Moorthy
+email: karishma.moorthy@mcgill.ca
 position: Workspace Officer
 ---
 
