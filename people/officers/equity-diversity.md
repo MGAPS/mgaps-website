@@ -1,6 +1,6 @@
 ---
-name: Nicholas Vieira
-email: nicholas.vieira@mail.mcgill.ca
+name: Vishwangi Shah
+email: vishwangi.shah@mail.mcgill.ca
 position: Equity, Diversity, and Inclusion Officer
 ---
 
