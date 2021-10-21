@@ -1,6 +1,6 @@
 ---
-name: TBD
-email: N/A
+name: Ahmad Mahmood
+email: mohammad.mahmood@mail.mcgill.ca
 position: VP Professional Development
 ---
 
