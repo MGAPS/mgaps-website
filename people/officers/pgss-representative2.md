@@ -1,6 +1,6 @@
 ---
-name: Francois Bourassa
-email: francois.bourassa4@mail.mcgill.ca
+name: TBD
+email: N/A
 position: PGSS Representative
 ---
 
