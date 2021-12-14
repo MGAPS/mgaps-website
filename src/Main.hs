@@ -9,6 +9,9 @@ import           Data.List                       (isPrefixOf, isSuffixOf,
 import           Data.Maybe                      (fromMaybe)
 import           Data.Ord                        (comparing)
 import qualified Data.Text                       as T
+import qualified Data.Text.Lazy                  as TL
+import           Data.Text.Lazy.Encoding         (encodeUtf8, decodeUtf8)
+
 import           Hakyll
 import           Hakyll.Images                   (compressJpgCompiler,
                                                   loadImage, scaleImageCompiler)
@@ -25,10 +28,12 @@ import qualified Text.Pandoc.Templates           as Template
 
 import           System.FilePath                 (takeFileName)
 import           System.IO
+import           System.Process.Typed            (ExitCode(..), readProcess, shell)
 
 import qualified Data.ByteString.Lazy            as B
 import qualified Text.Blaze.Html.Renderer.String as St
 import           Text.Blaze.Html.Renderer.Utf8   (renderHtml)
+import qualified Text.Blaze.Html.Renderer.Pretty as Pretty
 
 import           BulmaFilter                     (bulmaTransform)
 import           Template                        (NavigationLink (..), Schema,
@@ -93,9 +98,12 @@ main = do
 
     -- We generate the default template
     -- TODO: do this using `create`
-    let template = renderHtml $ mkDefaultTemplate schema ""
-    B.writeFile "templates/default.html" template
-
+    let template = mkDefaultTemplate schema ""
+    return template
+        -- We need to go through Text because of utf8-encoding
+        >>= return . encodeUtf8 . TL.pack . Pretty.renderHtml
+        >>= B.writeFile "templates/default.html" 
+        
     hakyllWith config $ do
 
         -- It is important that CNAME be in docs
@@ -125,7 +133,7 @@ main = do
         match ("static/**.md" .&&. complement quickLinks) $ do
             route $ (setExtension "html") `composeRoutes` staticRoute
             compile $ pandocCompiler_
-                >>= loadAndApplyTemplate "templates/default.html" defaultContext
+                >>= loadAndApplyTemplate "templates/default.html" (defaultContext <> lastUpdatedField)
                 >>= relativizeUrls
 
         --------------------------------------------------------------------------------
@@ -336,3 +344,22 @@ pandocCompiler_ = do
 -- Move content from static/ folder to base folder
 staticRoute :: Routes
 staticRoute = (gsubRoute "static/" (const ""))
+
+
+-- | Check when a file was last updated, based on the git history
+lastUpdatedViaGit :: FilePath -> IO (Maybe String)
+lastUpdatedViaGit fp = do
+    (ec, out, _) <- readProcess (shell $ "git log -1 --date=format:\"%Y/%m/%d\" --format=\"%ad\" " <> fp )
+    case ec of
+        ExitFailure _ -> return Nothing 
+        ExitSuccess -> return . Just . TL.unpack . decodeUtf8 $ out
+
+-- | Field which provides the "last-updated" variable for items, which 
+-- provides the date of the most recent git commit which modifies a file.
+-- Note that this context will be unavailable for generated pages
+lastUpdatedField :: Context String
+lastUpdatedField = field "last-updated" $ \it@(Item ident x) -> unsafeCompiler $ do
+    lastUpdated <- lastUpdatedViaGit (toFilePath ident)
+    case lastUpdated of 
+        Nothing -> return "<unknown>"
+        Just dt -> return dt

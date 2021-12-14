@@ -117,6 +117,7 @@ defaultFooter s = H.footer ! class_ "footer" $
             , H.a ! href "/about-this-website.html" $ "here"
             , "."
             ]
+        H.p $ "$if(last-updated)$This page was last updated on $last-updated$.$endif$"
 
     where
         renderLink (icon, link, name) = do
