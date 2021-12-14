@@ -4,11 +4,14 @@ on:
   # Tests for pull requests are located in a different workflow
   push:
     branches: [master]
+  pull_request:
+    branches: [master]
   schedule:
     # Build the website twice a week, to keep it up-to-date
     # and keep the cache warm.
     # See https://crontab.guru/#0_5_*_*_0,4
     - cron: '0 5 * * 0,4'
+
 
 jobs:
   build-and-deploy:
@@ -17,33 +20,75 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        # We need to fetch the whole history for the automatic 'last-updated'
+        # functionality works as expected
+        fetch-depth: 0
 
-    - name: Setup Haskell toolchain
+    - name: Install cabal/ghc
       uses: haskell/actions/setup@v1
+      id: setup-haskell
       with:
-        enable-stack: true
-        stack-version: 'latest'
+        ghc-version: '9.0.1'
+        cabal-version: '3.6.2.0'
 
-    - uses: actions/cache@v2
-      name: Cache Haskell build artifacts
+    - name: Set PATH for cabal-installed executables
+      run: |
+        echo "$HOME/.cabal/bin" >> $GITHUB_PATH
+
+    - name: Set Cabal options
+      # Overwriting prevent cabal from raising an error when installing
+      # an executable that is already present (because of caching)
+      # Some of these options are superfluous for this workflow,
+      # but I'm keeping them in sync with ci.yml so that caching is
+      # shared
+      run: |
+        cabal update
+        cabal user-config update -f -a "overwrite-policy: always"
+        cabal user-config update -f -a "install-method: copy"
+        cabal user-config update -f -a "split-sections: True"
+        cabal user-config update -f -a "executable-stripping: True"
+
+    - name: Cache cabal work
+      uses: actions/cache@v2
       with:
-        path: ~/.stack
-        key: ${{ runner.os }}-${{ hashFiles('stack.yaml.lock') }}
+        path: |
+          dist-newstyle
+          ${{ steps.setup-haskell.outputs.cabal-store }}
+        key: ${{ runner.os }}-${{ hashFiles('cabal.*') }}-cabal-install
 
     - name: Build site compiler
       run: |
-        stack install --fast
+        cabal install -j --disable-optimization
+
+    - name: Download Bulma CSS
+      env:
+        bulma-version: 0.9.3
+      run: |
+        wget -c https://github.com/jgthms/bulma/releases/download/${{ env.bulma-version }}/bulma-${{ env.bulma-version }}.zip 
+        unzip bulma-${{ env.bulma-version }}.zip -d sass
+
+    - name: Compile CSS from SCSS files
+      uses: gha-utilities/sass-build@v0.4.7
+      with:
+        source: sass/mgaps-style.scss
+        destination: css/mgaps-style.css
 
     - name: Build website
       run: |
-        stack exec -- mgaps-website rebuild
+        mgaps-website clean
+        mgaps-website build
         
     - name: Check internal links
       run: |
-        stack exec -- mgaps-website check --internal-links
+        mgaps-website check --internal-links
 
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.0.0
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      # Skip for pull requests
+      # Example:
+      #     https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#issue_comment
+      if: ${{ !github.event.issue.pull_request }} 
       with:
         BRANCH: gh-pages
         FOLDER: _rendered
