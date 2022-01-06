@@ -33,6 +33,24 @@ title: McGill Graduate Association of Physics Students
 
 </div>
 
+<h3 class="title is-3">Quick links</h3>
+
+<div class="columns">
+$for(quick-links)$
+    <!--
+        The width of the column elements depend on the number of quick links
+        Available widths are:
+            is-half
+            is-one-third
+            is-one-quarter
+            is-one-fifth
+    -->
+    <div class="column is-one-fifth">
+        $partial("templates/quick-link.html")$
+    </div>
+$endfor$
+</div>
+
 <h3 class="title is-3">Recent announcements</h3>
 $partial("templates/ann-list.html")$
 
@@ -57,22 +75,3 @@ $partial("templates/ann-list.html")$
 
 
 <p>…or you can <a href="/resources/jobs.html">find all opportunities here</a>.</p>
-
-
-<h3 class="title is-3">Quick links</h3>
-
-<div class="columns">
-$for(quick-links)$
-    <!--
-        The width of the column elements depend on the number of quick links
-        Available widths are:
-            is-half
-            is-one-third
-            is-one-quarter
-            is-one-fifth
-    -->
-    <div class="column is-one-fifth">
-        $partial("templates/quick-link.html")$
-    </div>
-$endfor$
-</div>
