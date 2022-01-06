@@ -27,7 +27,7 @@ schema = [
     -- So no need to include it in the schema
       Waypoint "About"  [
           NavLink "/about.html"                 "About MGAPS"
-        , NavLink "/people.html"                "Executive council and Officers"
+        , NavLink "/people.html"                "Executive Council and Officers"
         , NavLink "/announcements.html"         "All Announcements"
       ]
     , Waypoint "Academic" [
