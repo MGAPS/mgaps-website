@@ -40,7 +40,6 @@ schema = [
         , NavLink "/community/workspace.html"   "Workspace"
         , NavLink "/community/amenities.html"   "Amenities"
     ]
-    , NavLink "/rtech.html"                     "RTech"
     , Waypoint "Teaching" [
           NavLink "/teaching/teaching.html"     "Teaching Assistantship"
         , NavLink "/teaching/outreach.html"     "Outreach"
