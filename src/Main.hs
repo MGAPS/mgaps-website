@@ -1,44 +1,25 @@
---------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TupleSections     #-}
 
-
-import           Control.Monad                   (liftM)
-import           Data.List                       (isPrefixOf, isSuffixOf,
-                                                  sortBy)
+import           BulmaFilter                     (bulmaTransform)
+import qualified Data.ByteString.Lazy            as B
+import           Data.List                       (sortBy)
 import           Data.Maybe                      (fromMaybe)
 import           Data.Ord                        (comparing)
 import qualified Data.Text                       as T
 import qualified Data.Text.Lazy                  as TL
 import           Data.Text.Lazy.Encoding         (encodeUtf8, decodeUtf8)
-
-import           Hakyll
-import           Hakyll.Images                   (compressJpgCompiler,
-                                                  loadImage, scaleImageCompiler)
-
--- Hakyll can trip on characters like apostrophes
--- https://github.com/jaspervdj/hakyll/issues/109
 import qualified GHC.IO.Encoding                 as E
-
-import           Text.Pandoc.Definition          (Pandoc)
-import           Text.Pandoc.Extensions
-import           Text.Pandoc.Options
-import           Text.Pandoc.Walk                (walkM)
+import           Hakyll
+import           Hakyll.Images                   (compressJpgCompiler, loadImage)
+import           System.Process.Typed            (ExitCode(..), readProcess, shell)
+import           Template                        (NavigationLink (..), Schema, mkDefaultTemplate, tocTemplate)
+import qualified Text.Blaze.Html.Renderer.String as St
+import qualified Text.Blaze.Html.Renderer.Pretty as Pretty
+import           Text.Pandoc.Extensions          (enableExtension, Extension(..))
+import           Text.Pandoc.Options             (WriterOptions(..))
 import qualified Text.Pandoc.Templates           as Template
 
-import           System.FilePath                 (takeFileName)
-import           System.IO
-import           System.Process.Typed            (ExitCode(..), readProcess, shell)
-
-import qualified Data.ByteString.Lazy            as B
-import qualified Text.Blaze.Html.Renderer.String as St
-import           Text.Blaze.Html.Renderer.Utf8   (renderHtml)
-import qualified Text.Blaze.Html.Renderer.Pretty as Pretty
-
-import           BulmaFilter                     (bulmaTransform)
-import           Template                        (NavigationLink (..), Schema,
-                                                  mkDefaultTemplate,
-                                                  tocTemplate)
 
 schema :: Schema
 schema = [
@@ -78,18 +59,16 @@ schema = [
 
 -- We match images down to two levels
 -- Images/* and images/*/**
-jpgImages = "images/*.jpg" .||. "images/*/**.jpg" .||. "images/*.jpeg" .||. "images/*/**.jpeg"
+jpgImages, nonJpgImages, quickLinks :: Pattern
+jpgImages    = "images/*.jpg" .||. "images/*/**.jpg" .||. "images/*.jpeg" .||. "images/*/**.jpeg"
 nonJpgImages = ( "images/*/**" .||. "images/*" ) .&&. complement jpgImages
-quickLinks = "static/quick-links/*.md"
+quickLinks   = "static/quick-links/*.md"
 
--- MGAPS website configuration
--- The destination directory ("docs/") is required by Github Pages
+
 config :: Configuration
-config = defaultConfiguration {
-      destinationDirectory = "_rendered"
-    }
+config = defaultConfiguration { destinationDirectory = "_rendered" }
 
---------------------------------------------------------------------------------
+
 main :: IO ()
 main = do
     -- Hakyll can trip on characters like apostrophes
@@ -98,14 +77,9 @@ main = do
 
     -- We generate the default template
     -- TODO: do this using `create`
-    let template = mkDefaultTemplate schema ""
-    return template
-        -- We need to go through Text because of utf8-encoding
-        >>= return . encodeUtf8 . TL.pack . Pretty.renderHtml
-        >>= B.writeFile "templates/default.html" 
-        
-    hakyllWith config $ do
+    B.writeFile "templates/default.html" $ encodeUtf8 . TL.pack . Pretty.renderHtml $ mkDefaultTemplate schema
 
+    hakyllWith config $ do
         -- It is important that CNAME be in docs
         -- This allows for redirecting the Github Pages to
         -- a McGill domain
@@ -120,8 +94,7 @@ main = do
         -- JPG images are special: they can be compressed
         match jpgImages $ do
             route   idRoute
-            compile $ loadImage
-                >>= (compressJpgCompiler 50)
+            compile $ loadImage >>= compressJpgCompiler 50
 
         -- Most other things can be copied directly
         match (nonJpgImages .||. "js/*" .||. "files/**") $ do
@@ -131,7 +104,7 @@ main = do
         -- These are static pages, like the "sports" page
         -- Note that /static/index.html is a special case and is handled below
         match ("static/**.md" .&&. complement quickLinks) $ do
-            route $ (setExtension "html") `composeRoutes` staticRoute
+            route $ setExtension "html" `composeRoutes` staticRoute
             compile $ pandocCompiler_
                 >>= loadAndApplyTemplate "templates/default.html" (defaultContext <> lastUpdatedField)
                 >>= relativizeUrls
@@ -139,17 +112,17 @@ main = do
         --------------------------------------------------------------------------------
         -- Compile announcements
         -- This will create a new page per announcement
-        match ("announcements/*.md") $ do
+        match "announcements/*.md" $ do
             route $ setExtension "html"
             compile $ pandocCompiler_
                 >>= loadAndApplyTemplate "templates/ann.html"     annCtx
                 >>= loadAndApplyTemplate "templates/default.html" annCtx
                 >>= relativizeUrls
-        
+
         --------------------------------------------------------------------------------
         -- Compile job opportunities
         -- This will create a new page per job offer
-        match ("jobs/*.md") $ do
+        match "jobs/*.md" $ do
             route $ setExtension "html"
             compile $ pandocCompiler_
                 >>= loadAndApplyTemplate "templates/job.html"     jobCtx
@@ -159,7 +132,7 @@ main = do
         --------------------------------------------------------------------------------
         -- Compile all profiles
         -- If this is not done, we cannot use the metadata in HTML templates
-        match ("people/**") $ compile $ pandocCompiler_ >>= relativizeUrls
+        match "people/**" $ compile $ pandocCompiler_ >>= relativizeUrls
 
         --------------------------------------------------------------------------------
         -- Create a page for all MGAPS executives and officers
@@ -203,7 +176,7 @@ main = do
 
         --------------------------------------------------------------------------------
         -- Create a page containing all job offers
-        
+
 
         --------------------------------------------------------------------------------
         -- Create a page containing all job offers
@@ -261,20 +234,20 @@ main = do
                 let allPages = pages <> anns
                     sitemapCtx = listField "pages" annCtx (return allPages)
 
-                makeItem ""
+                makeItem (""::String)
                     >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx
 
         --------------------------------------------------------------------------------
         match "templates/*" $ compile templateCompiler
 
---------------------------------------------------------------------------------
+
 -- | Context for announcements
 annCtx :: Context String
 annCtx = mconcat [ dateField "date" "%Y-%m-%d"
                  , defaultContext
                  ]
 
---------------------------------------------------------------------------------
+
 -- | Context for job opportunities
 jobCtx :: Context String
 jobCtx = annCtx
@@ -288,8 +261,7 @@ presidentFirst :: MonadMetadata m => [Item a] -> m [Item a]
 presidentFirst = sortByM (getPosition . itemIdentifier)
     where
         sortByM :: (Monad m, Ord k) => (a -> m k) -> [a] -> m [a]
-        sortByM f xs = liftM (map fst . sortBy (comparing snd)) $
-                        mapM (\x -> liftM (x,) (f x)) xs
+        sortByM f xs = map fst . sortBy (comparing snd) <$> mapM (\x -> fmap (x,) (f x)) xs
 
         -- Extract the "position: " string from the item
         getPosition :: MonadMetadata m => Identifier -> m Position
@@ -306,6 +278,7 @@ instance Ord Position where
     compare (Position "President") _  = GT
     compare (Position a) (Position b) = compare a b
 
+
 -- | Allow math display, code highlighting, and Pandoc filters
 -- Note that the Bulma pandoc filter is always applied last
 pandocCompiler_ :: Compiler (Item String)
@@ -313,7 +286,7 @@ pandocCompiler_ = do
     ident <- getUnderlying
     toc <- getMetadataField ident "withtoc"
     tocDepth <- getMetadataField ident "tocdepth"
-    template <- unsafeCompiler $ (either error id) <$> 
+    template <- unsafeCompiler $ either error id <$>
                         Template.compileTemplate mempty (T.pack . St.renderHtml $ tocTemplate)
 
     let extensions = [
@@ -341,25 +314,26 @@ pandocCompiler_ = do
     -- Pandoc filters could be composed, instead of simply `bulmaTransform`
     pandocCompilerWithTransform defaultHakyllReaderOptions writerOptions bulmaTransform
 
+
 -- Move content from static/ folder to base folder
 staticRoute :: Routes
-staticRoute = (gsubRoute "static/" (const ""))
+staticRoute = gsubRoute "static/" (const mempty)
 
 
 -- | Check when a file was last updated, based on the git history
 lastUpdatedViaGit :: FilePath -> IO (Maybe String)
 lastUpdatedViaGit fp = do
-    (ec, out, _) <- readProcess (shell $ "git log -1 --date=format:\"%Y/%m/%d\" --format=\"%ad\" " <> fp )
+    (ec, out, _) <- readProcess (shell $ "git log -1 --date=format:\"%Y-%m-%d\" --format=\"%ad\" " <> fp )
     case ec of
-        ExitFailure _ -> return Nothing 
-        ExitSuccess -> return . Just . TL.unpack . decodeUtf8 $ out
+        ExitFailure _ -> return Nothing
+        ExitSuccess   -> return . Just . TL.unpack . decodeUtf8 $ out
 
 -- | Field which provides the "last-updated" variable for items, which 
 -- provides the date of the most recent git commit which modifies a file.
 -- Note that this context will be unavailable for generated pages
 lastUpdatedField :: Context String
-lastUpdatedField = field "last-updated" $ \it@(Item ident x) -> unsafeCompiler $ do
+lastUpdatedField = field "last-updated" $ \(Item ident _) -> unsafeCompiler $ do
     lastUpdated <- lastUpdatedViaGit (toFilePath ident)
-    case lastUpdated of 
+    case lastUpdated of
         Nothing -> return "<unknown>"
         Just dt -> return dt

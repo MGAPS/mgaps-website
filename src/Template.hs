@@ -8,13 +8,15 @@ module Template ( mkDefaultTemplate
 
 import           Control.Monad               (forM_)
 import           Data.List                   (intersperse)
-import           Text.Blaze.Html5            as H
-import           Text.Blaze.Html5.Attributes as A
+import           Text.Blaze.Html5            ( ToMarkup(toMarkup), ToValue(toValue), (!), AttributeValue,  )           
+import qualified Text.Blaze.Html5            as H
+import           Text.Blaze.Html5.Attributes ( charset, class_, content, href, name, rel, src, target, type_ ) 
+import qualified Text.Blaze.Html5.Attributes as A
 
-import           Text.Blaze                  (toMarkup, toValue)
 
+fontAwesomeURL, bulmaURL :: AttributeValue
 fontAwesomeURL = "https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-bulmaURL = "/css/mgaps-style.css"
+bulmaURL       = "/css/mgaps-style.css"
 
 type Icon = String
 type Link = String
@@ -22,7 +24,6 @@ type Link = String
 type SocialLink = (Icon, Link, String)
 
 data NavigationLink = NavLink            Link String                  -- ^ Regular link to a page
-                    | NavLinkWithSublink Link String [NavigationLink] -- ^ Link to a page, as well as sublinks
                     | Waypoint                String [NavigationLink] -- ^ Waypoint to other links
 
 type Schema = [NavigationLink]
@@ -41,10 +42,10 @@ tocTemplate :: H.Html
 tocTemplate = do
     H.div ! class_ "message is-link" $ do
         H.div ! class_ "message-header" $
-            H.p $ "On this page:"
+            H.p "On this page:"
 
         H.div ! class_ "message-body" $
-            H.p $ "$toc$"
+            H.p "$toc$"
 
     "$body$"
 
@@ -57,7 +58,7 @@ defaultHead = H.head $ do
     -- Note : won't show up for Edge while on localhost
     H.link ! rel "icon" ! type_ "image/x-icon" ! href "/images/icon.png"
     -- Style sheets
-    forM_ styleSheets (\link -> H.link ! rel "stylesheet" ! type_ "text/css" ! href link)
+    forM_ styleSheets (\lk -> H.link ! rel "stylesheet" ! type_ "text/css" ! href lk)
     -- Bulma helpers
     H.script ! type_ "text/javascript" ! src "/js/navbar-onclick.js" $ mempty
 
@@ -93,9 +94,9 @@ navigationBar links = H.section ! class_ "hero is-primary" $ do
 
     where
         renderLink :: NavigationLink -> H.Html
-        renderLink (NavLink link title) = H.a ! class_ "navbar-item" ! href (toValue link) $ toMarkup title
-        renderLink (Waypoint title sublinks) = do
-                H.div ! class_"navbar-item has-dropdown is-hoverable" $ do
+        renderLink (NavLink link' title) = H.a ! class_ "navbar-item" ! href (toValue link') $ toMarkup title
+        renderLink (Waypoint title sublinks) = 
+            H.div ! class_"navbar-item has-dropdown is-hoverable" $ do
                     -- A Waypoint does not have a liink of its own
                     -- But an anchor <a class="navbar-link">...</a> is still required
                     H.a ! class_ "navbar-link" $ toMarkup title
@@ -103,32 +104,11 @@ navigationBar links = H.section ! class_ "hero is-primary" $ do
                         forM_ sublinks renderLink
 
 
-defaultFooter :: String -> H.Html
-defaultFooter s = H.footer ! class_ "footer" $
-    H.div ! class_ "content has-text-centered" $ do
-        H.p $ (mconcat . intersperse " | ") $ renderLink <$> socialLinks
-        H.p $ mconcat [
-              "For questions and comments regarding this website, contact "
-            , H.a ! href "/people.html#VP Communications" $ "VP Communications"
-            , "."
-            ]
-        H.p $ mconcat [
-            "To know more about this how this site was created, click "
-            , H.a ! href "/about-this-website.html" $ "here"
-            , "."
-            ]
-        H.p $ "$if(last-updated)$This page was last updated on $last-updated$.$endif$"
-
-    where
-        renderLink (icon, link, name) = do
-            H.span ! class_ "icon" $ H.i ! class_ (toValue icon) $ mempty
-            H.a ! target "_blank" ! href (toValue link) $ toMarkup name
-
 -- | Full default template
 -- The schema is used to render the navigation bar
 -- The templateFooter will be adorned with the message @s@
-mkDefaultTemplate :: Schema -> String -> H.Html
-mkDefaultTemplate schema s = H.docTypeHtml $ do
+mkDefaultTemplate :: Schema -> H.Html
+mkDefaultTemplate schema = H.docTypeHtml $ do
     defaultHead
     H.body $ do
         navigationBar schema
@@ -141,4 +121,22 @@ mkDefaultTemplate schema s = H.docTypeHtml $ do
             --      https://bulma.io/documentation/elements/content/
                 H.div ! class_ "content" $ "$body$"
 
-        defaultFooter s
+        H.footer ! class_ "footer" $
+            H.div ! class_ "content has-text-centered" $ do
+                H.p $ (mconcat . intersperse " | ") $ renderLink <$> socialLinks
+                H.p $ mconcat [
+                    "For questions and comments regarding this website, contact "
+                    , H.a ! href "/people.html#VP Communications" $ "VP Communications"
+                    , "."
+                    ]
+                H.p $ mconcat [
+                    "To know more about this how this site was created, click "
+                    , H.a ! href "/about-this-website.html" $ "here"
+                    , "."
+                    ]
+                H.p $ "$if(last-updated)$This page was last updated on $last-updated$.$endif$"
+
+            where
+                renderLink (icon, link, name') = do
+                    H.span ! class_ "icon" $ H.i ! class_ (toValue icon) $ mempty
+                    H.a ! target "_blank" ! href (toValue link) $ toMarkup name'
