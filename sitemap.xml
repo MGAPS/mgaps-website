@@ -21,13 +21,6 @@
   </url>
 
   <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//about.html</loc>
-    <lastmod></lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>http://www.physics.mcgill.ca/mgaps//academic/colloquium.html</loc>
     <lastmod></lastmod>
     <changefreq>weekly</changefreq>
@@ -133,28 +126,14 @@
   </url>
 
   <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//resources/resources.html</loc>
+    <loc>http://www.physics.mcgill.ca/mgaps//resources.html</loc>
     <lastmod></lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//rtech.html</loc>
-    <lastmod></lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//teaching/outreach.html</loc>
-    <lastmod></lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//teaching/teaching.html</loc>
+    <loc>http://www.physics.mcgill.ca/mgaps//teaching.html</loc>
     <lastmod></lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
