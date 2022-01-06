@@ -26,8 +26,7 @@ schema = [
     -- Navigation link to home (/index.html) is done over the logo
     -- So no need to include it in the schema
       Waypoint "About"  [
-          NavLink "/about.html"                 "About MGAPS"
-        , NavLink "/people.html"                "Executive Council and Officers"
+          NavLink "/people.html"                "Executive Council and Officers"
         , NavLink "/announcements.html"         "All Announcements"
       ]
     , Waypoint "Academic" [
