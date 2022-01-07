@@ -30,9 +30,9 @@ schema = [
         , NavLink "/announcements.html"         "All Announcements"
       ]
     , Waypoint "Academic" [
-          NavLink "/academic/prelim.html"       "Preliminary Examination"
-        , NavLink "/academic/mentorship.html"   "Mentorship Program"
-        , NavLink "/academic/colloquium.html"   "Physics Colloquium"
+          NavLink "/academic/prelim.html"                            "Preliminary Examination"
+        , NavLink "/academic/mentorship.html"                        "Mentorship Program"
+        , NavLink "http://www.physics.mcgill.ca/seminars/PSC.html"   "Physics Colloquium"
       ]
     , Waypoint "Community" [
           NavLink "/community/events.html"      "Events"
