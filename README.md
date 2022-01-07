@@ -15,8 +15,7 @@ This repository hosts the source material and code for the newest version of the
     -   [Updating images](#updating-images)
 -   [What cannot be changed](#what-cannot-be-changed)
 -   [Local Usage](#local-usage)
-    -   [Building the compiler
-        locally](#building-the-compiler-locally)
+    -   [Building the compiler locally](#building-the-compiler-locally)
     -   [Available commands](#available-commands)
     -   [Building the website](#building-the-website)
     -   [Testing the website](#testing-the-website)
