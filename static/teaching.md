@@ -74,17 +74,13 @@ More education resources from other universities can be found on this page: [htt
 
 ### TA Wiki
 
-During the 2013-2014 academic year the TA-Team launched the [McGill Physics TA Wiki](http://www.hep.physics.mcgill.ca/TA/bin/view/Main/WebHome).
+During the 2013-2014 academic year the  [McGill Physics TA Wiki](http://www.hep.physics.mcgill.ca/TA/bin/view/Main/WebHome) was launched.
 
 __The purpose of this wiki is to be a resource for TAs and by TAs__, to help them both choose and perform their TA duties. The wiki is password protected with only professors and TAs having access rights. This provides a space for TAs to document their experiences, describe useful and ineffective strategies, and paint an accurate picture for future TAs of what a particular TA job entails.
 
 __The wiki is a work in progress__! We encourage you to add content and take ownership of your course page - be creative! If you found your page lacking then please take the time before the end of term to improve it for the next TA or even prof who will teach the course.
 
 __Please do not upload solutions to the wiki__, even though it is password protected we do not wish to take this risk.
-
-### TA Team
-
-In 2013 MGAPS started a TA Committee, otherwise known at the TA-Team. All TAs are welcome to join the TA-Team and meet informally to discuss challenges and share experiences with other TAs. In general the TA-Team meets every two weeks. The TA-Team also has their own group email list (ta-team@physics.mcgill.ca), and if you are interested joining please contact the current TA officer.
 
 ### Allocation and Contract
 
