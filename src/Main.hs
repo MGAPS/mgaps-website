@@ -37,7 +37,6 @@ schema = [
     , Waypoint "Community" [
           NavLink "/community/events.html"      "Events"
         , NavLink "/community/workspace.html"   "Workspace"
-        , NavLink "/community/amenities.html"   "Amenities"
     ]
     , NavLink "/teaching.html"                  "Teaching Assistantship"
     , Waypoint "Graduate Program" [
