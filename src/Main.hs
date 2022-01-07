@@ -44,7 +44,6 @@ schema = [
         , NavLink "http://www.physics.mcgill.ca/grads/finance.html"     "Finances"
         , NavLink "/program/new_students.html"                          "New Students"
     ]
-    , NavLink "/resources.html"                                         "Resources" 
     ]
 
 -- We match images down to two levels
