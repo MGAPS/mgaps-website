@@ -26,25 +26,25 @@ schema = [
     -- Navigation link to home (/index.html) is done over the logo
     -- So no need to include it in the schema
       Waypoint "About"  [
-          NavLink "/people.html"                "Executive Council and Officers"
-        , NavLink "/announcements.html"         "All Announcements"
+          NavLink "/people.html"                                        "Executive Council and Officers"
+        , NavLink "/announcements.html"                                 "All Announcements"
       ]
     , Waypoint "Academic" [
-          NavLink "/academic/prelim.html"                            "Preliminary Examination"
-        , NavLink "/academic/mentorship.html"                        "Mentorship Program"
-        , NavLink "http://www.physics.mcgill.ca/seminars/PSC.html"   "Physics Colloquium"
+          NavLink "/academic/prelim.html"                               "Preliminary Examination"
+        , NavLink "/academic/mentorship.html"                           "Mentorship Program"
+        , NavLink "http://www.physics.mcgill.ca/seminars/PSC.html"      "Physics Colloquium"
       ]
     , Waypoint "Community" [
-          NavLink "/community/events.html"      "Events"
-        , NavLink "/community/workspace.html"   "Workspace"
+          NavLink "/community/events.html"                              "Events"
+        , NavLink "/community/workspace.html"                           "Workspace"
     ]
-    , NavLink "/teaching.html"                  "Teaching Assistantship"
+    , NavLink "/teaching.html"                                          "Teaching Assistantship"
     , Waypoint "Graduate Program" [
-          NavLink "/program/program.html"       "Program Information"
-        , NavLink "/program/finances.html"      "Finances"
-        , NavLink "/program/new_students.html"  "New Students"
+          NavLink "/program/program.html"                               "Program Information"
+        , NavLink "http://www.physics.mcgill.ca/grads/finance.html"     "Finances"
+        , NavLink "/program/new_students.html"                          "New Students"
     ]
-    , NavLink "/resources.html"       "Resources" 
+    , NavLink "/resources.html"                                         "Resources" 
     ]
 
 -- We match images down to two levels
