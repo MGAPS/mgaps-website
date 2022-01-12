@@ -25,10 +25,7 @@ schema :: Schema
 schema = [
     -- Navigation link to home (/index.html) is done over the logo
     -- So no need to include it in the schema
-      Waypoint "About"  [
-          NavLink "/people.html"                                        "Executive Council and Officers"
-        , NavLink "/announcements.html"                                 "All Announcements"
-      ]
+      NavLink "/people.html"                                            "Executive Council and Officers"
     , Waypoint "Academic" [
           NavLink "/academic/prelim.html"                               "Preliminary Examination"
         , NavLink "/academic/mentorship.html"                           "Mentorship Program"
@@ -99,17 +96,6 @@ main = do
                 >>= relativizeUrls
 
         --------------------------------------------------------------------------------
-        -- Compile announcements
-        -- This will create a new page per announcement
-        match "announcements/*.md" $ do
-            route $ setExtension "html"
-            compile $ pandocCompiler_
-                >>= loadAndApplyTemplate "templates/ann.html"     annCtx
-                >>= loadAndApplyTemplate "templates/default.html" annCtx
-                >>= relativizeUrls
-
-
-        --------------------------------------------------------------------------------
         -- Compile all profiles
         -- If this is not done, we cannot use the metadata in HTML templates
         match "people/**" $ compile $ pandocCompiler_ >>= relativizeUrls
@@ -136,24 +122,6 @@ main = do
                     >>= loadAndApplyTemplate "templates/default.html" profileListCtx
                     >>= relativizeUrls
 
-        --------------------------------------------------------------------------------
-        -- Create a page containing all announcements
-        create ["announcements.html"] $ do
-            route idRoute
-            compile $ do
-                announcements <- recentFirst =<< loadAll "announcements/*"
-                -- Context for announcement list (annList)
-                let annListCtx = mconcat [
-                          listField "announcements" annCtx (return announcements)
-                        , constField "title" "All announcements"
-                        , defaultContext
-                        ]
-
-                makeItem ""
-                    >>= loadAndApplyTemplate "templates/ann-list.html" annListCtx
-                    >>= loadAndApplyTemplate "templates/default.html" annListCtx
-                    >>= relativizeUrls
-
 
         --------------------------------------------------------------------------------
         -- Compile all quick links before inserting them on the home page
@@ -165,12 +133,7 @@ main = do
             route staticRoute
             compile $ do
                 quickLinks' <- loadAll quickLinks
-                announcements <- fmap (take 5) . recentFirst =<< loadAll "announcements/*"
-                let indexCtx = mconcat [
-                          listField "announcements" annCtx (return announcements)
-                        , listField "quick-links" defaultContext (return quickLinks')
-                        , defaultContext
-                        ]
+                let indexCtx = mconcat [ listField "quick-links" defaultContext (return quickLinks'), defaultContext]
 
                 getResourceBody
                     >>= applyAsTemplate indexCtx
@@ -183,25 +146,15 @@ main = do
         create ["sitemap.xml"] $ do
             route   idRoute
             compile $ do
-                -- Gather all announcements
-                anns <- recentFirst =<< loadAll "announcements/*"
                 -- Gather all other pages
                 pages <- loadAll (fromGlob "static/**.md")
-                let allPages = pages <> anns
-                    sitemapCtx = listField "pages" annCtx (return allPages)
+                let sitemapCtx = listField "pages" defaultContext  (return pages)
 
                 makeItem (""::String)
                     >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx
 
         --------------------------------------------------------------------------------
         match "templates/*" $ compile templateCompiler
-
-
--- | Context for announcements
-annCtx :: Context String
-annCtx = mconcat [ dateField "date" "%Y-%m-%d"
-                 , defaultContext
-                 ]
 
 
 -- Sort lists of profiles by position
