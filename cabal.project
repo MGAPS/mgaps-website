@@ -4,3 +4,4 @@ packages:
 
 -- No need for runtime optimization
 optimization: 0
+jobs: $ncpus

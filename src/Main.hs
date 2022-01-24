@@ -80,7 +80,7 @@ main = do
         -- JPG images are special: they can be compressed
         match jpgImages $ do
             route   idRoute
-            compile $ loadImage >>= compressJpgCompiler 50
+            compile $ loadImage >>= compressJpgCompiler (50::Int)
 
         -- Most other things can be copied directly
         match (nonJpgImages .||. "js/*" .||. "files/**") $ do
