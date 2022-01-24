@@ -38,7 +38,7 @@ The Department administration will not remind you, or notify you if you don't ha
 
 #### PhD Program
 
-PhD students are required to take __two 600-level courses__ (these are actual classes and not the 690-type classes). As of Fall 2010, PhD Students who have obtained a MSc Degree in physics at McGill and those who are fast-tracking from the M.Sc. to the PhD program are _exempted from taking one of the two courses_, but are still required to _take one 600-level course_. This is not a retroactive change, so that students who started their PhD before Fall 2010 must follow the requirements of the previous McGill Calendar. 
+PhD students are required to take __two 600-level courses__ (these are actual classes and not the 690-type classes). PhD Students who have obtained a MSc Degree in physics at McGill and those who are fast-tracking from the M.Sc. to the PhD program are _exempted from taking one of the two courses_, but are still required to _take one 600-level course_.
 
 For the PhD program, there is no need to register for the 690-type classes, since there is no credit requirements. PhD Students are research Full-time students. 
 

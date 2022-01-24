@@ -72,19 +72,9 @@ Many pedagogical resources are available online. Check them out to get new ideas
 
 More education resources from other universities can be found on this page: [http://www.mcgill.ca/tls/graduates/resources#TA](http://www.mcgill.ca/tls/graduates/resources#TA). 
 
-### TA Wiki
-
-During the 2013-2014 academic year the  [McGill Physics TA Wiki](http://www.hep.physics.mcgill.ca/TA/bin/view/Main/WebHome) was launched.
-
-__The purpose of this wiki is to be a resource for TAs and by TAs__, to help them both choose and perform their TA duties. The wiki is password protected with only professors and TAs having access rights. This provides a space for TAs to document their experiences, describe useful and ineffective strategies, and paint an accurate picture for future TAs of what a particular TA job entails.
-
-__The wiki is a work in progress__! We encourage you to add content and take ownership of your course page - be creative! If you found your page lacking then please take the time before the end of term to improve it for the next TA or even prof who will teach the course.
-
-__Please do not upload solutions to the wiki__, even though it is password protected we do not wish to take this risk.
-
 ### Allocation and Contract
 
-McGill Physics Graduate Students are entitled to a $4,300 teaching assistantship (TAship) every year they qualify within the priority pool (MSc students years 1-2, PhD students years 1-5).  In order to apply for a TAship, you need to fill up the application form that is placed in your mailbox and give it back to the administration before the deadline (end of april for returning student, and in september for new students).
+McGill Physics Graduate Students are entitled to a $5,800 teaching assistantship (TAship) every year they qualify within the priority pool (MSc students years 1-2, PhD students years 1-5).  In order to apply for a TAship, you need to fill up the application form that is placed in your mailbox and give it back to the administration before the deadline (end of april for returning student, and in september for new students).
 
 Students are assigned TAships and can request preferred courses, working typically 6 hours per week during the Fall and Winter semesters. TAship are quite various ranging from homework marker, exam marker, lab instructor (with marking), tutoring, etc...
 
