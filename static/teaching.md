@@ -12,6 +12,10 @@ MGAPS intends to foster the growth of a pro-active TA community in the Physics D
 * Promote TA Mentorship 
 * Solicit new ideas! 
 
+### TA Handbook
+
+Please consider attending the yearly TA training in the Fall whether you're a new or returning TA. For those who need a reference document that covers all the main points, [we’ve compiled a document that you can access here](/files/Physics-TA-Handbook.pdf).
+
 ### TA Feedback
 
 Use this [survey template](/files/TA_feedback_survey_myCourse_template.txt) to easily create an anonymous survey that your students can complete using myCourses. You can make the survey yourself if your professor grants you access, or you can ask them to do it.
@@ -32,17 +36,13 @@ To create the survey simply:
 
 ##### Attending a teaching workshop
 
-The T-Pulse group (Tomlinson Project in University-Level Science Education) is committed to improving science teaching and learning at McGill. T-Pulse organizes free graduate teaching workshops for TAs in science: [http://www.mcgill.ca/tpulse/workshop](http://www.mcgill.ca/tpulse/workshop). These workshops represent a great opportunity to familiarize yourself with efficient teaching techniques and to address your concerns, especially as a new TA.
+The T-Pulse group (Tomlinson Project in University-Level Science Education) is committed to improving science teaching and learning at McGill. T-Pulse organizes free graduate teaching workshops for TAs in science: [https://www.mcgill.ca/tpulse/workshop](https://www.mcgill.ca/tpulse/workshop). These workshops represent a great opportunity to familiarize yourself with efficient teaching techniques and to address your concerns, especially as a new TA.
 
 Skillsets ([http://www.mcgill.ca/skillsets/](http://www.mcgill.ca/skillsets/)) also offers teaching workshops through the Learn to Teach (LTT) initiative. 
 
 ##### Rent clickers for your tutorials sessions
 
-Student Response System (or 'clickers') are wireless devices enabling you to ask questions to students and to collect the answers in real time, which can help creating a dynamical learning environment [http://www.mcgill.ca/tpulse/clickers/](http://www.mcgill.ca/tpulse/clickers/).
-
-##### Get in touch with the McGill Teaching and Learning Services
-
-Teaching and Learning Services strives to make McGill a community of people who love to teach and are excited to learn. In collaboration with students, faculty and staff, they create engaging environments and provide leadership and support for meaningful educational experiences for all. Visit [their website](http://www.mcgill.ca/tls/)!
+Student Response System (or 'clickers') are wireless devices enabling you to ask questions to students and to collect the answers in real time, which can help creating a dynamical learning environment [https://www.mcgill.ca/tpulse/clickers/](https://www.mcgill.ca/tpulse/clickers/).
 
 #### Resources outside campus
 
@@ -74,10 +74,10 @@ More education resources from other universities can be found on this page: [htt
 
 ### Allocation and Contract
 
-McGill Physics Graduate Students are entitled to a $5,800 teaching assistantship (TAship) every year they qualify within the priority pool (MSc students years 1-2, PhD students years 1-5).  In order to apply for a TAship, you need to fill up the application form that is placed in your mailbox and give it back to the administration before the deadline (end of april for returning student, and in september for new students).
+McGill Physics Graduate Students are entitled to a [teaching assistantship (TAship) salary every year](https://www.physics.mcgill.ca/grads/finance.html ) they qualify within the priority pool (MSc students years 1-2, PhD students years 1-5).  In order to apply for a TAship, you need to fill up the application form that is placed in your mailbox and give it back to the administration before the deadline (end of april for returning student, and in september for new students).
 
 Students are assigned TAships and can request preferred courses, working typically 6 hours per week during the Fall and Winter semesters. TAship are quite various ranging from homework marker, exam marker, lab instructor (with marking), tutoring, etc...
 
 TAs are paid for a total of 90 hours per semester, at a rate of $26.51 (fall 2013). All teacher assistant are members of the union [AGSEM](http://agsem-aeedem.ca/), therefore, all TAs must fill up the union form at the beginning of each semester in order to get the instalment of their TA pay.  The form is placed by the administration in your mailbox at the beginning of each semester.
 
-Finally, the TA workload forms must be filled out every semester, to prevent students from being overworked by the course supervisors.  It can be found here: [www.mcgill.ca/files/hr/TA_workload_all_0608.pdf](http://www.mcgill.ca/files/hr/TA_workload_all_0608.pdf)
+Finally, the [TA workload forms must be filled out every semester, to prevent students from being overworked by the course supervisors](/files/Teaching_Assistant_Workload_Form_Feb_2012.pdf).
