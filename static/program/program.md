@@ -75,14 +75,14 @@ This is mandatory and required by the University to help you keep track of your 
 
 The report has two sections, first on progress made and the second on future goals, to help ensure that the degree is on track and completed in a reasonable amount of time.
 
-The forms can be found here: [http://www.mcgill.ca/gps/policies/tracking/](http://www.mcgill.ca/gps/policies/tracking/)
+The forms can be found here: [https://www.mcgill.ca/gps/students/progress-tracking](https://www.mcgill.ca/gps/students/progress-tracking)
 
 The department should send reminders about the form and will inform you of the deadlines
 
 ### Thesis submission
 
 What follows is a summary of the content of the long and detailed document sent by the McGill GPSO (see attachment at the bottom of the page).
-You are encouraged to read it if you need more information. If you still need clarification after reading this page and the attached document, you can contact the [MGAPS VP Academic](/people.html#VP Academic), or for more direct help, contact Sangyong Jeon. Finally, McGill GPSO posted a [Frequently Asked Questions](http://www.mcgill.ca/files/gps/ThesisSubmissionDeadlinesGraduationFeesFAQ.pdf) document that can be useful.
+You are encouraged to read it if you need more information. If you still need clarification after reading this page and the attached document, you can contact the [MGAPS VP Academic](/people.html#VP Academic), or for more direct help, contact Sangyong Jeon. 
 
 #### Deadlines
 

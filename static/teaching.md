@@ -40,10 +40,6 @@ The T-Pulse group (Tomlinson Project in University-Level Science Education) is c
 
 Skillsets ([http://www.mcgill.ca/skillsets/](http://www.mcgill.ca/skillsets/)) also offers teaching workshops through the Learn to Teach (LTT) initiative. 
 
-##### Rent clickers for your tutorials sessions
-
-Student Response System (or 'clickers') are wireless devices enabling you to ask questions to students and to collect the answers in real time, which can help creating a dynamical learning environment [https://www.mcgill.ca/tpulse/clickers/](https://www.mcgill.ca/tpulse/clickers/).
-
 #### Resources outside campus
 
 ##### Attend a SALTISE workshop
@@ -67,7 +63,6 @@ Many pedagogical resources are available online. Check them out to get new ideas
 
 * Berkeley: [http://gsi.berkeley.edu/teachingguide/presem/index.html](http://gsi.berkeley.edu/teachingguide/presem/index.html)
 * UBC: [http://www.phas.ubc.ca/~phas_ta/resources.html](http://www.phas.ubc.ca/~phas_ta/resources.html)
-* Stanford: [https://physics.stanford.edu/graduate-program/physics-education-resources](https://physics.stanford.edu/graduate-program/physics-education-resources)
 * Maryland: [http://www.physics.umd.edu/perg/](http://www.physics.umd.edu/perg/)
 
 More education resources from other universities can be found on this page: [http://www.mcgill.ca/tls/graduates/resources#TA](http://www.mcgill.ca/tls/graduates/resources#TA). 
