@@ -9,13 +9,14 @@
 $red: #d42e12; //Official mcgill red: Pantone 485
 $gold: #957b38;
 $silver: #c0c0c0;
+$blue: #3b5be9;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 $primary: $red;
 $primary-invert: findColorInvert($red);
-$link: $silver;
-$link-invert: findColorInvert($silver);
+$link: $blue;
+$link-invert: findColorInvert($blue);
 
 // Customization for navbar, including dropdowns
 $navbar-dropdown-background-color: $primary;
