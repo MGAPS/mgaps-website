@@ -30,10 +30,6 @@ NOTE THAT students with appropriate previous coursework and background may obtai
 
 However, MSc. students __can choose to spread the course load over the two years__. There is no regulation forcing you to take your classes the first year (unless your supervisor strongly encourages you to do so). In the case that you wish to spread your classes over the two years of your MSc (maybe because of the course offering), you have to complete your credit load up to 12 credits per semester with enough of the PHYS 69* credits. Again, you need approval for the PHYS 691 and PHYS 693. In any case, the "Course Selection Form" has to be filled out with the student's supervisor at the beginning of the first semester.
 
-<div class="notification is-warning">
-In all cases, you need 45 credits to graduate. This is part of the new requirements as of Fall 2010.
-</div>
-
 The Department administration will not remind you, or notify you if you don't have all those credits. And this is not something you want to find out after having submitted your thesis. For more information, please contact Sangyong Jeon: jeon at physics dot mcgill dot ca
 
 #### PhD Program

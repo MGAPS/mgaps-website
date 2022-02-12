@@ -40,7 +40,7 @@ styleSheets =
 -- Wrap the content of a page with a table of content
 tocTemplate :: H.Html
 tocTemplate = do
-    H.div ! class_ "message is-link" $ do
+    H.div ! class_ "message is-dark" $ do
         H.div ! class_ "message-header" $
             H.p "On this page:"
 

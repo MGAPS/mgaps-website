@@ -20,16 +20,6 @@ Please consider attending the yearly TA training in the Fall whether you're a ne
 
 Use this [survey template](/files/TA_feedback_survey_myCourse_template.txt) to easily create an anonymous survey that your students can complete using myCourses. You can make the survey yourself if your professor grants you access, or you can ask them to do it.
 
-To create the survey simply:
-
-1. Navigate to "Edit Course"
-2. Navigate to "Surveys"
-3. Navigate to "New Survey"
-4. Fill in the relevant fields, and then navigate to "Add/Edit Questions"
-5. Navigate to "Import"
-6. Under "Input Source" select "Desire2Learn Text Format" and upload the survey template
-7. Now you can open the survey, or modify the survey to better suit your purposes in mycourses
-
 ### TA Resources
 
 #### Resources at McGill
@@ -73,6 +63,6 @@ McGill Physics Graduate Students are entitled to a [teaching assistantship (TAsh
 
 Students are assigned TAships and can request preferred courses, working typically 6 hours per week during the Fall and Winter semesters. TAship are quite various ranging from homework marker, exam marker, lab instructor (with marking), tutoring, etc...
 
-TAs are paid for a total of 90 hours per semester, at a rate of $26.51 (fall 2013). All teacher assistant are members of the union [AGSEM](http://agsem-aeedem.ca/), therefore, all TAs must fill up the union form at the beginning of each semester in order to get the instalment of their TA pay.  The form is placed by the administration in your mailbox at the beginning of each semester.
+TAs are paid for a total of 90 hours per semester, at a rate of $29.33 (winter 2022). All teacher assistant are members of the union [AGSEM](http://agsem-aeedem.ca/), therefore, all TAs must fill up the union form at the beginning of each semester in order to get the instalment of their TA pay.  The form is placed by the administration in your mailbox at the beginning of each semester.
 
 Finally, the [TA workload forms must be filled out every semester, to prevent students from being overworked by the course supervisors](/files/Teaching_Assistant_Workload_Form_Feb_2012.pdf).
