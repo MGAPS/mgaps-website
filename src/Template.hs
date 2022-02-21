@@ -70,13 +70,14 @@ navigationBar links = H.section ! class_ "hero is-primary" $ do
         H.nav ! class_ "navbar is-primary" $
             H.div ! class_ "container" $ do
                 H.div ! class_ "navbar-brand" $ do
-                    H.a ! class_ "navbar-item" ! href "/index.html" $ H.strong $ "MGAPS"
+                    H.a ! class_ "navbar-item" ! href "/index.html" $ 
+                        H.img ! A.src "images/navbar-logo.png"
 
                     -- toggleBurger function defined in js/navbar-onclick.js
                     H.span ! class_ "navbar-burger burger" ! A.id "burger" ! A.onclick "toggleBurger()"$ do
-                        H.span $ mempty
-                        H.span $ mempty
-                        H.span $ mempty
+                        H.span mempty
+                        H.span mempty
+                        H.span mempty
 
                 H.div ! class_ "navbar-menu" ! A.id "navbarMenu" $
                     H.div ! class_ "navbar-start" $
@@ -134,7 +135,7 @@ mkDefaultTemplate schema = H.docTypeHtml $ do
                     , H.a ! href "/about-this-website.html" $ "here"
                     , "."
                     ]
-                H.p $ "$if(last-updated)$This page was last updated on $last-updated$.$endif$"
+                H.p "$if(last-updated)$This page was last updated on $last-updated$.$endif$"
 
             where
                 renderLink (icon, link, name') = do
