@@ -9,7 +9,7 @@ contact: Workspace Officer
 
 #### Reporting a workspace/lab issue
 
-Workspace issues can be reported at any time to MGAPS Workspace Officer, whose email is available here. More serious issues, such as laboratory safety concerns, should be discussed with the laboratory's PI first. If the problem is not resolved with the PI, the Departmental Safety Committee (DSC) can be contacted through MGAPS Workspace Officer or by contacting directly the Committe chair (as of 2015, Andreas Warburton) at this email address: [safety.officer@physics.mcgill.ca](mailto:safety.officer@physics.mcgill.ca)
+Workspace issues can be reported at any time to MGAPS Workspace Officer, whose email is available here. More serious issues, such as laboratory safety concerns, should be discussed with the laboratory's PI first. If the problem is not resolved with the PI, the Departmental Safety Committee (DSC) can be contacted through MGAPS Workspace Officer or by contacting directly the Committee chair (as of 2022, Prof. Dominic Ryan) at this email address: [safety.officer@physics.mcgill.ca](mailto:safety.officer@physics.mcgill.ca)
 
 ##### The Rutherford spaces survey report for Fall 2019 is available [here](/files/Rutherford_spaces_survey_report.pdf).
 
