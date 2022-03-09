@@ -13,10 +13,8 @@ If you sign up you will be matched with up to two undergrads. You will receive e
 
 [http://www.mcgill.ca/caps/students/services/mentor](http://www.mcgill.ca/caps/students/services/mentor)
 
-Some of you signed up during the previous trial run in the winter semester, in which case we will assume that you are still willing to participate and you do not need to fill out the form again.  If you applied during the winter semester and are no longer interested in mentoring a student, then please reply to this email.  If you have not previously signed up and wish to do so, then please fill out the registration form at the following link:
+Some of you signed up during the previous trial run in the winter semester, in which case we will assume that you are still willing to participate and you do not need to fill out the form again.  If you applied during the winter semester and are no longer interested in mentoring a student, then please reply to this email. If you have not previously signed up and wish to do so, then please contact the [current VP Academic](/people.html).
 
-[http://tinyurl.com/lobu89l](http://tinyurl.com/lobu89l)
-
-Note that this project is being run in conjunction with the Women in Physics at McGill University group, and that there is a gender preference question designed to facilitate students who would like to partake in female-to-female mentorship.
+Note that this project is being run in conjunction with the [Equity, Diversity, and Inclusion Committee at McGill University](https://www.physics.mcgill.ca/edi/), and that there is a gender preference question designed to facilitate students who would like to partake in female-to-female mentorship.
  
 If you have any questions, comments or suggestions please don't hesitate!

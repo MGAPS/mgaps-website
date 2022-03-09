@@ -9,15 +9,12 @@ This repository hosts the source material and code for the newest version of the
     -   [Updating the front page](#updating-the-front-page)
     -   [Updating static content](#updating-static-content)
     -   [Updating profiles](#updating-profiles)
-    -   [Updating announcements](#updating-announcements)
-    -   [Updating job offers](#updating-job-offers)
     -   [Updating quick links](#updating-quick-links)
     -   [Updating files](#updating-files)
     -   [Updating images](#updating-images)
 -   [What cannot be changed](#what-cannot-be-changed)
 -   [Local Usage](#local-usage)
-    -   [Building the compiler
-        locally](#building-the-compiler-locally)
+    -   [Building the compiler locally](#building-the-compiler-locally)
     -   [Available commands](#available-commands)
     -   [Building the website](#building-the-website)
     -   [Testing the website](#testing-the-website)
@@ -38,8 +35,6 @@ The `mgaps-website` compiler expects certain things from your website source. Yo
 
 * A `static/` directory, containing static website content;
     * A `static/quick-links/` directory containing quick links information;
-* An `announcements/` directory containing announcements (more on this later);
-* A `jobs/` directory containing job offers (more on this later);
 * A `template/` directory containing HTML templates;
 * An `image/` directory containing images;
     * An `image/profile/` directory containing profile pictures;
@@ -49,8 +44,6 @@ The `mgaps-website` compiler expects certain things from your website source. Yo
 ### Updating the front page
 
 While most content handled by `mgaps-website` is in the Markdown format, the front page `index.html` is a mix of HTML and Markdown to allow for easier layout control.
-
-The front page will automatically pull recent announcements (described below) as well as quick-links (also described below). Beyond this, changes can be in HTML.
 
 ### Updating static content
 
@@ -114,63 +107,6 @@ Profiles __NOT IN__ `people/council/` or `people/officers/` will be ignored.
 An anchor is automatically created for every profile. For example, a profile with `position: President` can be reached at the location `people.html#President`, while a profile with `position: VP Academic` can be reached at location `people.html#VP Academic`.
 
 In case where there are two positions with the same name (e.g. two PGSS representatives), the anchor will be placed on the profile that comes alphabetically first.
-
-### Updating announcements
-
-To create a new announcements, add a markdown file to the directory `announcements/`. `mgaps-website` will create one announcement per markdown file in `announcements/`. An announcement file can have the following metadata:
-
-* title (required): title of the announcement;
-* date (required): date of the announcement __in the YYYY-MM-DD format__;
-* updated (optional): date of the last update to the announcement __in the YYYY-MM-DD format__;
-* summary (optional): summary of the announcement. This summary will appear on front page `index.html`.
-
-Here's an example of an announcement:
-
-```markdown
----
-title: Example announcement
-date: 2018-11-29
-updated: 2018-11-30
-summary: This is the summary of this announcement.
----
-
-Mauris in lorem nisl. Maecenas tempus facilisis ante, 
-eget viverra nisl tincidunt et. Donec turpis lectus, 
-mattis ac malesuada a, accumsan eu libero. Morbi condimentum, 
-tortor et tincidunt ullamcorper, sem quam pretium nulla, 
-id convallis lectus libero nec turpis. Proin dapibus nisi 
-id est sodales nec ultrices tortor pellentesque.
-```
-
-Announcements will be sorted by date. Only the most recent annoucements will be shown on the front page (`index.html`), but all announcements are visible at `announcements.html`. This page is linked to the front page.
-
-### Updating job offers
-
-To create a new job offer, add a markdown file to the directory `jobs/`. `mgaps-website` will create one job offer per markdown file. A job offer file can have the following metadata:
-
-* title (required): title of the offer;
-* employer (required): Employer;
-* apply (required): Contact information to apply;
-* date (required): date of the offer __in the YYYY-MM-DD format__;
-* updated (optional): date of the last update to the offer __in the YYYY-MM-DD format__;
-* summary (optional): summary of the offer. This summary will appear on front page `index.html`.
-
-Here's an example of a job offer:
-
-```markdown
----
-title: Lecturer
-employer: McGill University
-apply: Example <example@example.com>
-date: 2019-11-29
-updated: 2019-12-05
-summary: Lecturer for U0 students in STEM.
----
-
-Here are all the details concerning this opportunity.
-```
-
-Job opportunities will be sorted by date.
 
 ### Updating quick links
 
@@ -289,7 +225,7 @@ The rendered website should be checked before publishing!
 
 __Deployment of the website is automated.__
 
-Simply commit the changes to the website source (in `static/`, `people/`, `announcements/`, etc.). Once changes on the master repository are detected, the following will happen: 
+Simply commit the changes to the website source (in `static/`, `people/`, etc.). Once changes on the master repository are detected, the following will happen: 
 
 1. A build server (provided by GitHub) will clone the content of the website;
 2. the Haskell toolchain will be installed;

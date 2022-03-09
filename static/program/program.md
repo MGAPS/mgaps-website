@@ -30,15 +30,11 @@ NOTE THAT students with appropriate previous coursework and background may obtai
 
 However, MSc. students __can choose to spread the course load over the two years__. There is no regulation forcing you to take your classes the first year (unless your supervisor strongly encourages you to do so). In the case that you wish to spread your classes over the two years of your MSc (maybe because of the course offering), you have to complete your credit load up to 12 credits per semester with enough of the PHYS 69* credits. Again, you need approval for the PHYS 691 and PHYS 693. In any case, the "Course Selection Form" has to be filled out with the student's supervisor at the beginning of the first semester.
 
-<div class="notification is-warning">
-In all cases, you need 45 credits to graduate. This is part of the new requirements as of Fall 2010.
-</div>
-
 The Department administration will not remind you, or notify you if you don't have all those credits. And this is not something you want to find out after having submitted your thesis. For more information, please contact Sangyong Jeon: jeon at physics dot mcgill dot ca
 
 #### PhD Program
 
-PhD students are required to take __two 600-level courses__ (these are actual classes and not the 690-type classes). As of Fall 2010, PhD Students who have obtained a MSc Degree in physics at McGill and those who are fast-tracking from the M.Sc. to the PhD program are _exempted from taking one of the two courses_, but are still required to _take one 600-level course_. This is not a retroactive change, so that students who started their PhD before Fall 2010 must follow the requirements of the previous McGill Calendar. 
+PhD students are required to take __two 600-level courses__ (these are actual classes and not the 690-type classes). PhD Students who have obtained a MSc Degree in physics at McGill and those who are fast-tracking from the M.Sc. to the PhD program are _exempted from taking one of the two courses_, but are still required to _take one 600-level course_.
 
 For the PhD program, there is no need to register for the 690-type classes, since there is no credit requirements. PhD Students are research Full-time students. 
 
@@ -75,14 +71,14 @@ This is mandatory and required by the University to help you keep track of your 
 
 The report has two sections, first on progress made and the second on future goals, to help ensure that the degree is on track and completed in a reasonable amount of time.
 
-The forms can be found here: [http://www.mcgill.ca/gps/policies/tracking/](http://www.mcgill.ca/gps/policies/tracking/)
+The forms can be found here: [https://www.mcgill.ca/gps/students/progress-tracking](https://www.mcgill.ca/gps/students/progress-tracking)
 
 The department should send reminders about the form and will inform you of the deadlines
 
 ### Thesis submission
 
 What follows is a summary of the content of the long and detailed document sent by the McGill GPSO (see attachment at the bottom of the page).
-You are encouraged to read it if you need more information. If you still need clarification after reading this page and the attached document, you can contact the [MGAPS VP Academic](/people.html#VP Academic), or for more direct help, contact Sangyong Jeon. Finally, McGill GPSO posted a [Frequently Asked Questions](http://www.mcgill.ca/files/gps/ThesisSubmissionDeadlinesGraduationFeesFAQ.pdf) document that can be useful.
+You are encouraged to read it if you need more information. If you still need clarification after reading this page and the attached document, you can contact the [MGAPS VP Academic](/people.html#VP Academic), or for more direct help, contact Sangyong Jeon. 
 
 #### Deadlines
 
