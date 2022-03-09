@@ -21,20 +21,6 @@
   </url>
 
   <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//about.html</loc>
-    <lastmod></lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//academic/colloquium.html</loc>
-    <lastmod></lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>http://www.physics.mcgill.ca/mgaps//academic/mentorship.html</loc>
     <lastmod></lastmod>
     <changefreq>weekly</changefreq>
@@ -49,13 +35,6 @@
   </url>
 
   <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//community/amenities.html</loc>
-    <lastmod></lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>http://www.physics.mcgill.ca/mgaps//community/events.html</loc>
     <lastmod></lastmod>
     <changefreq>weekly</changefreq>
@@ -63,21 +42,7 @@
   </url>
 
   <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//community/sports.html</loc>
-    <lastmod></lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>http://www.physics.mcgill.ca/mgaps//community/workspace.html</loc>
-    <lastmod></lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//program/finances.html</loc>
     <lastmod></lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -133,113 +98,8 @@
   </url>
 
   <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//resources/resources.html</loc>
+    <loc>http://www.physics.mcgill.ca/mgaps//teaching.html</loc>
     <lastmod></lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//rtech.html</loc>
-    <lastmod></lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//teaching/outreach.html</loc>
-    <lastmod></lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//teaching/teaching.html</loc>
-    <lastmod></lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2021-01-06-WinterGA.html</loc>
-    <lastmod>2021-01-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2020-02-23-PostDocWorkshop.html</loc>
-    <lastmod>2020-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2020-02-22-WellnessNight.html</loc>
-    <lastmod>2020-02-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2020-01-27-WinterGA.html</loc>
-    <lastmod>2020-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2019-10-22-Nobel-Lecture.html</loc>
-    <lastmod>2019-10-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2019-10-15-Hackathon.html</loc>
-    <lastmod>2019-10-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2019-10-10-Lecture.html</loc>
-    <lastmod>2019-10-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2019-10-01-Codetober.html</loc>
-    <lastmod>2019-10-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2019-09-04-BBQ.html</loc>
-    <lastmod>2019-09-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2019-07-29-Event.html</loc>
-    <lastmod>2019-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2019-06-28-NewExecs.html</loc>
-    <lastmod>2019-06-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>http://www.physics.mcgill.ca/mgaps//announcements/2019-01-17-new-website.html</loc>
-    <lastmod>2019-01-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
