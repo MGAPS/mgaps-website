@@ -1,6 +1,6 @@
 ---
-name: Garrett Leverick
-email: garrett.leverick@mail.mcgill.ca
+name: Catherine Boisvert
+email: catherine.boisvert4@mail.mcgill.ca
 position: VP Communications
 ---
 
