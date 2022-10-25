@@ -1,5 +1,5 @@
 ---
-name: Ahmad Mahmood
+name: Garrett
 email: mohammad.mahmood@mail.mcgill.ca
 position: VP Professional Development
 ---
