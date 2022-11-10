@@ -1,6 +1,6 @@
 ---
-name: Matthew Lundy
-email: matthew.lundy@mcgill.ca
+name: Francis McGee
+email: francis.mcgee@mail.mcgill.ca
 position: PGSS Representative
 ---
 
