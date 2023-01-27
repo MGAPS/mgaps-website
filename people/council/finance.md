@@ -1,5 +1,5 @@
 ---
-name: David Gallacher
+name: David Gallacher 
 email: david.gallacher@mail.mcgill.ca
 position: VP Finance
 picture: images/profiles/david-gallacher.jpg
