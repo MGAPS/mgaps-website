@@ -1,5 +1,5 @@
 ---
-name: Department of Physics
+name: McGill Department of Physics
 link: http://www.physics.mcgill.ca/
 ---
 
