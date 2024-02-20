@@ -1,8 +1,8 @@
 ---
-name: Matheus Pessoa
-email: matheus.pessoa@mail.mcgill.ca
+name: Lisa Nasu-Yu
+email: lisa.nasu-yu@mail.mcgill.ca
 position: TA Officer
-picture: images/profiles/matheus-pessoa.jpg
+picture: images/profiles/IMG_3673.jpg
 ---
 
-Here to support you throughout your time here as a TA in physics. Recently I’ve been working with the McGill Office of Science Education (OSE) to develop programs to improve teaching and learning in the physics department. Please come to the TA trainings, read the TA handbook, and let me know if you have any questions regarding your TA-ship! I’m here to help.
+As Teaching Assistant Officer, I’m here to support you through your time as a TA in physics. Feel free to reach out to me with any questions or concerns about your TA-ship!

@@ -1,8 +1,11 @@
 ---
-name: Nayyer Raza
+name: Magnus L'Argent
 email: nayyer.raza@mail.mcgill.ca
 position: AGSEM Representative
-pitcure: images/profiles/nayyer-raza.jpg
+pitcure: images/profiles/hs_magnus_1023-5.jpg
 ---
 
-Hi! I'm one of your delegates to the Association of Graduate Students Employed at McGill (AGSEM), which is your teaching assistant (TA) union. My job is to make sure you know your rights as a TA and make sure they're being respected throughout the department. I also attend AGSEM meetings to keep you up to date.
+Hi, my name is Magnus and I am a first year Master's student. I am one of your 3 TA delegates, alongside Nayyer and Noah! If you ever need to reach me, you can find me in the basement of the TSI or feel free to send me an email. Some fun facts about me:
+- I love to go on hikes, ski, and rock climb
+- I was born in Alaska and grew up in Oregon
+- As part of my research I study pulsars and radio astronomy
