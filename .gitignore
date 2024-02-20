@@ -28,3 +28,5 @@ _cache/
 
 # Build directory
 _rendered/
+
+.DS_Store
