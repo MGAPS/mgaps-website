@@ -28,3 +28,6 @@ _cache/
 
 # Build directory
 _rendered/
+
+# OSX file explorer addendum stuff
+.DS_Store
