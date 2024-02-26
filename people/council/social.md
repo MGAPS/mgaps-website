@@ -1,8 +1,8 @@
 ---
-name: Sam Wong
-email: samantha.wong2@mail.mcgill.ca
+name: Nick Vieira
+email: nicholas.vieira@mail.mcgill.ca
 position: VP Social
-picture: images/profiles/sam-wong.jpg
+picture: images/profiles/nick-vieira.jpg
 ---
 
-When pursuing an advanced degree occasions to meet people from other fields are scarce, but it is valuable to make connections between fields and between theory and experiment. It's also important to have fun! Past activities have included a Hockey Night In Physics (organize a gathering in a bar after physics league Hockey games), the annual Cocktail party (biggest event, usually organized at Thompson house), the Winter retreat (spend a weekend at the McGill outdoor club house), among others. My job is also to help motivate people organizing activities within the department by providing them with a financial support and guidance, don't be afraid to suggest an activity you think would be successful!
+Hi! My name is Nick and I'm a 3rd year PhD doing astrophysics. As your VP Social, my job is to organize the social events you want to see! Want a painting night? To play video games in our grad lounge (Rutherford 322)? To hang out at Thomson House? Reach out to me with your ideas and let's make it happen. I also previously served as president of MGAPS in 2022-2023 and as a delegate for your TA union, AGSEM.
