@@ -1,5 +1,5 @@
 ---
-name: Minh Au 
+name: Minh Au
 email: minh.au@mail.mcgill.ca
 position: VP Academic
 ---
