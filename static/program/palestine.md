@@ -1,0 +1,36 @@
+---
+title: Satement on Palestine
+---
+
+# Statement from the McGill Graduate Association for Physics Students on Palestine
+
+On 21 March 2024, physics graduate students voted nearly unanimously in favour of two motions on Palestine to be adopted by the McGill Graduate Association for Physics Students (MGAPS). These two motions were:
+1. [Motion in solidarity with SSMU and against McGill’s efforts to undermine student democracy](https://drive.google.com/file/d/1ocknDU1qHz2uXfN4QEM9qbjGYhe1M_2F/view)
+2. [Motion calling for McGill’s Board of Governors and the McGill Graduate Association of Physics Students (MGAPS) to divest from and boycott apartheid](https://drive.google.com/file/d/1hWDSgOOWrOKb-QK6Ikw1AJYtDqPoc8k3/view)
+
+The second motion resolves that:
+* MGAPS calls on McGill’s Board of Governors to immediately and completely divest of all financial holdings in corporations invested in the apartheid regime of Israel and all companies complicit in the genocide against Palestinians,
+* MGAPS investigate its own holdings, report to the members, and commit to divestment of and boycott from these same corporations and companies,
+* MGAPS communicate this stance to all graduate students, the Department of Physics (including the chair), the Post-Graduate Student Society (PGSS), and all other Post-Graduate Student Associations (PGSAs) in the Faculty of Science, 
+* MGAPS reiterate this stance at any future meetings with the Department of Physics, including with the chair,
+* MGAPS makes an immediate public statement condemning the ongoing genocide against the Palestinian people of Gaza, and, 
+* MGAPS issue a public demand that McGill’s administration also immediately and publicly condemn the genocidal bombing campaigns and siege against the Palestinian people of Gaza.
+
+MGAPS’ statement and demands follow. This statement will be communicated with all graduate students, the Department of Physics, PGSS, and all other PGSAs in the Faculty of Science.
+
+MGAPS condemns what the [International Court of Justice (ICJ) has called a plausible genocide in the Gaza strip](https://www.icj-cij.org/sites/default/files/case-related/192/192-20240126-sum-01-00-en.pdf). In the 26 January 2024 order of the ICJ, the Court stated: “Israel must, in accordance with its obligations under the Genocide Convention, in relation to Palestinians in Gaza, take all measures within its power to prevent the commission of all acts within the scope of Article II of this Convention”.
+
+Two months later, [on 26 March 2024, the Court responded to South Africa’s request for additional measures and introduced additional orders](https://www.icj-cij.org/sites/default/files/case-related/192/192-20240328-ord-01-00-en.pdf). [In their press release](https://www.icj-cij.org/sites/default/files/case-related/192/192-20240328-pre-01-00-en.pdf), the ICJ states : “In its Order, the Court observes that, since 26 January 2024, ‘the catastrophic living conditions of the Palestinians in the Gaza Strip have deteriorated further, in particular in view of the prolonged and widespread deprivation of food and other basic necessities to which the Palestinians in the Gaza Strip have been subjected’, and that ‘Palestinians in Gaza are no longer facing only a risk of famine, as noted in the Order of 26 January 2024, but that famine is setting in’”. 
+
+MGAPS members have agreed with the findings of the ICJ, human rights groups, and other recognized bodies that:
+* ### Israel is an apartheid state
+* ### Israel’s actions in the Gaza Strip constitute an ongoing genocide.
+
+MGAPS condemns the [genocidal statements of Israeli officials](https://www.nbcnews.com/news/world/gaza-nakba-israels-far-right-palestinian-fears-hamas-war-rcna123909), [the imposed famine on a civilian population, the indiscriminate bombing of these civilians, half of whom are children](https://www.washingtonpost.com/world/2024/03/03/gaza-aid-convoy-israel-war/), [the use of illegal chemical weapons (e.g., white phosphorous)](https://www.nbcnews.com/news/world/israel-white-phosphorus-weapons-gaza-human-rights-group-rcna120272) on these civilians, [the systematic blocking of food, water, electricity, fuel, shelter, clothing, hygiene and sanitation requirements, as well as medical supplies and medical care into Gaza](https://www.bbc.com/news/world-middle-east-68691095), [the multiple impositions of Internet “black-outs” in the strip](https://www.cnn.com/2024/01/18/middleeast/gaza-communications-blackout-one-week-israel-hamas-intl/index.html), [the deliberate targeting and assassinations of journalists](https://www.theguardian.com/world/2023/dec/21/israel-idf-accused-targeting-journalists-gaza), [the deliberate targeting and assassinations of aid workers](https://www.theguardian.com/world/2024/apr/02/charities-halt-gaza-operations-after-israeli-drones-kill-aid-workers), [the destruction and siege of all hospitals in Gaza](https://www.reuters.com/world/middle-east/northern-gaza-no-longer-has-functional-hospital-who-says-2023-12-21/), [and the destruction of every single university in Gaza](https://www.ohchr.org/en/press-releases/2024/04/un-experts-deeply-concerned-over-scholasticide-gaza). We reiterate the calls of the ICJ to take all actions necessary to prevent this ongoing genocide. 
+
+MGAPS calls on the McGill administration to make a similar, public statement. In the nearly six months since 7 October 2023, McGill has made no such statement, despite widespread student pressure. Furthermore, McGill has repeatedly attempted to undermine student-run, democratic processes on campus. Most notably, [McGill has threatened to end its memorandum of understanding with SSMU due to its new Policy Against Genocide in Palestine](https://ssmu.ca/blog/2023/11/post-election-statement/), which passed with historic voter participation in Fall 2023. MGAPS demands that McGill revoke their heavy-handed threat to the undergraduates and SSMU and instead pursue collegial dialogue with SSMU and other student groups whenever there is a concern about a violation of constitution, policy, or bylaws. 
+
+Moving forward, MGAPS is committed to solidarity with Palestinian students at McGill and with the Palestinian struggle against genocide and settler-colonial apartheid. MGAPS has a strong commitment to supporting all students in the Department of Physics and fostering a sense of community and support regardless of background or identity (see Articles 2.3 and 2.4 of our [constitution](https://mgaps.physics.mcgill.ca/files/MGAPS_Constitution_2023.pdf)). To make sure we follow up on our commitments, MGAPS will establish a working group tasked with the responsibility of investigating its own holdings, reporting to the members, and committing to divestment of and boycott from financial holdings in corporations invested in the apartheid regime of Israel and all companies complicit in the genocide against Palestinians. MGAPS also calls on McGill’s Board of Governors to immediately and completely divest of all financial holdings in these companies. 
+
+In solidarity,
+McGill Graduate Association of Physics Students (MGAPS)
