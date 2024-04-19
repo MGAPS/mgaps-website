@@ -1,6 +1,6 @@
 ---
 name: Magnus L'Argent
-email: nayyer.raza@mail.mcgill.ca
+email: magnus.largent@mail.mcgill.ca
 position: AGSEM Representative
 pitcure: images/profiles/hs_magnus_1023-5.jpg
 ---

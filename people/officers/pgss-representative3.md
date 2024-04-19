@@ -1,6 +1,6 @@
 ---
-name: TBD
-email: N/A
+name: Aryana Haghjoo
+email: aryana.haghjoo@mail.mcgill.ca
 position: PGSS Representative
 ---
 

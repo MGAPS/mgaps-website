@@ -1,6 +1,6 @@
 ---
-name: Vishwangi Shah
-email: vishwangi.shah@mail.mcgill.ca
+name: Sarah Rourke
+email: sarah.a.rourke@mail.mcgill.ca
 position: Equity, Diversity, and Inclusion Officer
 ---
 
