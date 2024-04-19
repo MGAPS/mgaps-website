@@ -56,6 +56,13 @@
   </url>
 
   <url>
+    <loc>http://www.physics.mcgill.ca/mgaps//program/palestine.html</loc>
+    <lastmod></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>http://www.physics.mcgill.ca/mgaps//program/program.html</loc>
     <lastmod></lastmod>
     <changefreq>weekly</changefreq>
