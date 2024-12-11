@@ -1,6 +1,5 @@
 ---
-name: Nick Vieira
-email: nicholas.vieira@mail.mcgill.ca
+name: (Vacant)
+email: N/A
 position: Chief Returning Officer
-picture: images/profiles/bowhead_square.jpg
 ---

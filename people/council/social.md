@@ -1,8 +1,8 @@
 ---
-name: Nick Vieira
-email: nicholas.vieira@mail.mcgill.ca
+name: Noah Pinkney
+email: noah.pinkney@mail.mcgill.ca
 position: VP Social
-picture: images/profiles/bowhead_square.jpg
+picture: images/profiles/noah-pinkney.jpg
 ---
 
-Hi! My name is Nick and I'm a 3rd year PhD doing astrophysics. As your VP Social, my job is to organize the social events you want to see! Want a painting night? To play video games in our grad lounge (Rutherford 322)? To hang out at Thomson House? Reach out to me with your ideas and let's make it happen. I also previously served as president of MGAPS in 2022-2023 and as a delegate for your TA union, AGSEM.
+Hi, I’m Noah, a first-year PhD student in condensed matter theory and your VP Social for the 2024-25 academic year. My job is to organize social events for MGAPS, including the end-of-year party, holiday party, and annual welcome barbecue. If you have ideas for other activities or events you’d like to see, please reach out to me — let's make it happen!

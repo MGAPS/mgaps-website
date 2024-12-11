@@ -1,8 +1,10 @@
 ---
-name: Lisa Nasu-Yu
-email: lisa.nasu-yu@mail.mcgill.ca
+name: (Vacant)
+email: N/A
 position: TA Officer
-picture: images/profiles/IMG_3673.jpg
 ---
 
-As Teaching Assistant Officer, I’m here to support you through your time as a TA in physics. Feel free to reach out to me with any questions or concerns about your TA-ship!
+The Teaching Assistant Officer shall act as a resource for TAs seeking to build their
+teaching skill set, work with the department to improve assistanceship allocation and
+mentorship, and aim to organize activities which bring TAs together fostering the
+graduate teaching community
