@@ -1,7 +1,8 @@
 ---
-name: Francis McGee
-email: francis.mcgee@mail.mcgill.ca
+name: Valentin Boettcher
+email: valentin.boettcher@physics.mcgill.ca
 position: PGSS Representative
+picture: images/profiles/valentin-boettcher.jpg
 ---
 
-The job of a PGSS representative is to attend and vote on behalf of physics grads at PGSS council (which is accompanied by free food) and in turn keep MGAPS informed of the current issues and initiatives.
+Hi, I'm a second year PhD student in Bill Coish's group. As one of the PGSS representatives, I attend the PGSS council meetings and vote on behalf of physics grads. In turn, we keep MGAPS informed of the current issues and initiatives.

@@ -1,8 +1,8 @@
 ---
-name: Catherine Boisvert
-email: catherine.boisvert4@mail.mcgill.ca
+name: Renee Goodman
+email: renee.goodman@mail.mcgill.ca
 position: Sports Officer
-picture: images/profiles/catherine-boisvert.jpg
+picture: images/profiles/renee-goodman.jpg
 ---
 
-Do you like being active and playing games with physics friends? I'm here to facilitate just that! I will help you organize an intramural team or any other recreational activity you want to do with your peers. I also might be organizing some events such as Hockey Night in Physics.
+Hello Physics Grads! As sports officer it is my pleasure to organize fun activities to keep us happy and healthy. Keep an eye out in your inbox for events such as weekly yoga nights, rock climbing, ice skating, workshops, and more! Feel free to contact me with any event ideas or questions.

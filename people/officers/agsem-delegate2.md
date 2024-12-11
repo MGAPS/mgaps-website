@@ -1,11 +1,8 @@
 ---
-name: Magnus L'Argent
-email: magnus.largent@mail.mcgill.ca
+name: Numa Karolinski
+email: numa.karolinski@mail.mcgill.ca
 position: AGSEM Representative
-pitcure: images/profiles/hs_magnus_1023-5.jpg
+pitcure: images/profiles/numa-karolinski.jpg
 ---
 
-Hi, my name is Magnus and I am a first year Master's student. I am one of your 3 TA delegates, alongside Nayyer and Noah! If you ever need to reach me, you can find me in the basement of the TSI or feel free to send me an email. Some fun facts about me:
-- I love to go on hikes, ski, and rock climb
-- I was born in Alaska and grew up in Oregon
-- As part of my research I study pulsars and radio astronomy
+Are you employed at McGill? If you're a graduate student in the physics department, there's a very good chance you are. As your AGSEM representative, I ensure that your rights as an employee are respected. I also dedicate my free time to advocating for fair pay and making sure your voice is heard. If you have any employment-related issues, please don’t hesitate to contact me! In addition to being your AGSEM representative, I’m a first-year PhD student in Professor Andrew Cumming’s research group, where I run theoretical numerical simulations of neutron star winds using Athena++. I also have an interest in cosmology, history, foreign affairs and economics; all interesting facts are welcome with me. When I’m not working or advocating, you can usually find me rock climbing, DJing, listening to music, or catching up on sleep.

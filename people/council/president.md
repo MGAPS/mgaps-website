@@ -1,8 +1,8 @@
 ---
-name: David Gallacher
-email: david.gallacher@mail.mcgill.ca
+name: Catherine Boisvert
+email: catherine.boisvert4@mail.mcgill.ca
 position: MGAPS President
-picture: images/profiles/david-gallacher.jpg
+picture: images/profiles/catherine-boisvert.jpg
 ---
 
-Hi! As president of MGAPS, I act as the primary spokesperson and advocate for all graduate students. This includes coordinating the MGAPS executive, ensuring constant communication with the department, listening to and voicing the concerns of graduate students, and facilitating contact with other groups within and outside McGill. I am also involved in (ongoing) negotiations around the graduate student stipend. We're constantly looking for ways to better serve grad students, but we can't do so without knowing what issues you're facing or where your needs aren't being met. Please don't hesitate to email me or contact me on the grad students' slack!
+Hi there! My name is Catherine and I am both a PhD candidate in experimental condensed matter physics and MGAPS President of our 2024-2025 council. As president, my main task is to be the primary spokesperson for all physics graduate students. I am mandated to advocate for our community, which means overseeing our MGAPS council, ensuring communication and transparency between the students and the department, listening to any and all concerns of our community, coordinating with other groups within and outside McGill, and overall making sure that our needs as a whole are met. MGAPS works towards continuously bettering our community, so if there is an issue that we aren’t aware of or needs that are not being met, do not hesitate to contact any council members (or shoot me an email!). We are here for YOU.

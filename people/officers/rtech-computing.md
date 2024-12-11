@@ -1,8 +1,7 @@
 ---
-name: David Gallacher
-email: david.gallacher@mail.mcgill.ca
+name: Hugo Schérer
+email: hugo.scherer@mail.mcgill.ca
 position: RTech and Computing Officer
-picture: images/profiles/david-gallacher.jpg
 ---
 
-I run interactive events to improve grads’ computer-related skills. In the Fall semester, these will be Codetober, a workshop series on introductory programming topics every Tuesday of October, and the Physics Hackathon. Check out [https://www.facebook.com/RTechMcGill](https://www.facebook.com/RTechMcGill) and [www.physics.mcgill.ca/hackathon](http://www.physics.mcgill.ca/hackathon).
+Hi, I'm Hugo! The RTech and Computing Officer acts as a resource for students seeking or initiating computational skill development opportunities (such as workshops, seminars, lecture series, etc...) in the department. This person is also responsible for maintaining the MGAPS website.
