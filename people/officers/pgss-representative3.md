@@ -1,6 +1,6 @@
 ---
 name: Talia Martz-Oberlander
-email: -
+email: talia.martz-oberlander@mail.mcgill.ca
 position: PGSS Representative
 picture: images/profiles/talia-martz-oberlander.jpg
 ---
