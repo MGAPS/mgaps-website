@@ -1,10 +1,8 @@
 ---
-name: (Vacant)
-email: N/A
+name: Kate Szabo
+email: kate.szabo@mail.mcgill.ca
 position: TA Officer
+picture: images/profiles/kate-szabo.jpg
 ---
 
-The Teaching Assistant Officer shall act as a resource for TAs seeking to build their
-teaching skill set, work with the department to improve assistanceship allocation and
-mentorship, and aim to organize activities which bring TAs together fostering the
-graduate teaching community
+Hello! I'm a first year Master's student in experimental condensed matter physics, and the current TA officer for MGAPS. My role involves collecting and sharing logistical and pedagogical resources for TA's. If you have any good teaching resources, or any recommendations for information to include in our TA wiki (coming soon) please reach out to me!
