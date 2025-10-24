@@ -5,8 +5,9 @@ position: VP Finance
 #picture: images/profiles/leo-rizk.jpg
 ---
 
-Hello physics grads and postdocs! My name’s Aditya. My role is
-to manage the budget, track all our transactions, and keep MGAPS financially
-sober. MGAPS is funded by you (its members) and I make sure that these funds
-are used judiciously to benefit you. If there’s anything I can help with,
-please let me know.
+Hello! I’m Aditya, a 1st year master’s student working in condensed matter
+physics. I’m super excited to serve on the MGAPS council this year as the VP
+Finance. For my role, I will be taking inspiration from Mr. Monopoly, Michael
+J. Burry (from the Big Short), and Leo Rizk. They made some pretty good
+financial decisions. Come say hi if you see me around Rutherford or if you have
+some ideas/suggestions for MGAPS!
