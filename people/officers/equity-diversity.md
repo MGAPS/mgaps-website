@@ -2,7 +2,7 @@
 name: Valentina Mazzotti
 email: valentina.mazzotti@mail.mcgill.ca
 position: Equity, Diversity, and Inclusion Officer
-picture: images/profiles/valentina-mazzotti.png
+picture: images/profiles/valentina-mazzotti.jpg
 ---
 
 Hi there, I'm Valentina! As the Equity, Diversity, and Inclusion (EDI) Officer,
@@ -17,3 +17,4 @@ love organizing events that bring science to a broader audience and make
 physics more accessible and engaging for the public. Outside of physics, I love
 spending time outdoors —  whether it’s running, skiing, or hiking. I’m also a
 big music fan and enjoy reading whenever I can.
+
