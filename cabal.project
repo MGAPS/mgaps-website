@@ -1,7 +1,8 @@
 
 packages:
     ./
-
+-- New upstream http2 update breaks CI
+constraints: http2 == 5.3
 -- No need for runtime optimization
 optimization: 0
 jobs: $ncpus
