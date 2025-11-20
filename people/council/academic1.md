@@ -4,5 +4,14 @@ email: ekaterina.ulyanov@mail.mcgill.ca
 position: VP Academic
 picture: images/profiles/ekaterina-katya-ulyanov.jpg
 ---
+Hi! I’m Katya, a condensed matter experimentalist. As VP Academics, I support
+students’ academic inquiries and serve as a point person for visiting
+lecturers. I also manage the Undergrad Mentorship Program between MGAPS and
+MSPS. Join me at the weekly Cookies & Convo chats to meet visiting academics
+and industry scientists (Fridays at 2:30PM in RP 322)! 
 
-Hi! I’m Katya, a first-year PhD student in experimental condensed matter. As VP Academic, my goal is to foster a pleasant and enriching environment for students, and to facilitate communication and collaboration between MGAPS and MSPS, the undergraduate student society. I oversee the Coffee & Cookies gatherings with colloquium speakers, held weekly on Fridays at 2:35PM, and manage the Undergrad Mentorship Program. Outside of research, I enjoy creative writing, reading (and running a book club!), playing frisbee, and exploring Montréal cafés to find the perfect cappuccino. Please don’t hesitate to contact me with any academic (i.e. supervisory or course-related) concerns - I am here to support you and to direct you to appropriate resources.
+Outside of research, I enjoy creative writing, reading (and currently running
+several book clubs!), playing frisbee, and trying out as many Montréal cafés as
+I can. You can contact me with any academic concerns (e.g., supervisory or
+course-related). I am here to support you and to direct you to appropriate
+resources.
