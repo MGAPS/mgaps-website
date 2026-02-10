@@ -5,7 +5,7 @@ position: VP Academic
 picture: images/profiles/ekaterina-katya-ulyanov.jpg
 ---
 
-Hi! I’m Katya, a condensed matter experimentalist. As VP Academics,
+Hi! I’m Katya, a condensed matter experimentalist. As VP Academic,
 I support students’ academic inquiries and serve as a point person 
 for visiting lecturers. I also manage the Undergrad Mentorship 
 Program between MGAPS and MSPS. Join me at the weekly Cookies & Convo 
