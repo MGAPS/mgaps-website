@@ -2,7 +2,7 @@
 name: Juan Duran
 email: juan.duran@mail.mcgill.ca
 position: AGSEM Representative
-picture: images/profiles/Juan-Duran.jpeg
+picture: images/profiles/juan-duran.jpg
 ---
 
 Hi! I am the Medical Physics liaison. Have you ever wondered what options are
