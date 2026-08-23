@@ -124,7 +124,7 @@ Workspace Officer. In this role, I ensure the quality, safety, and
 accessibility of physics graduate student environments, and I also serve on the
 Physics EDI and Building Committees. If you have any suggestions, concerns, or
 ideas related to our building, please let me know!&lt;/p&gt;</description></item><item><title/><link>https://mgaps.physics.mcgill.ca/quick-links/constitution/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/quick-links/constitution/</guid><description>&lt;p&gt;MGAPS&amp;rsquo; constitution, last updated and ratified on 28 January 2025.&lt;/p&gt;</description></item><item><title/><link>https://mgaps.physics.mcgill.ca/quick-links/palestine/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/quick-links/palestine/</guid><description>&lt;p&gt;MGAPS&amp;rsquo; statement on Palestine as of April 22nd, 2024.&lt;/p&gt;</description></item><item><title/><link>https://mgaps.physics.mcgill.ca/quick-links/phys/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/quick-links/phys/</guid><description>&lt;p&gt;The McGill Department of Physics hosts over 40 faculty members and 200 graduate students.&lt;/p&gt;</description></item><item><title/><link>https://mgaps.physics.mcgill.ca/quick-links/report/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/quick-links/report/</guid><description>&lt;p&gt;MGAPS&amp;rsquo; Report on the financial situation of McGill Physics graduate students, based on the July &amp;amp; August 2022 stipend survey.&lt;/p&gt;</description></item><item><title/><link>https://mgaps.physics.mcgill.ca/quick-links/wip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/quick-links/wip/</guid><description>&lt;p&gt;The Equity, Diversity, and Inclusion (EDI) committee is a group of faculty, staff, post-docs, and students whose role is to provide leadership and resources to the department in promoting an equitable and inclusive environment.&lt;/p&gt;</description></item><item><title>About this website</title><link>https://mgaps.physics.mcgill.ca/about-this-website/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/about-this-website/</guid><description>&lt;p&gt;This website was originally created by
-&lt;a href="https://www.physics.mcgill.ca/~decotret"&gt;Laurent P. René de Cotret&lt;/a&gt; using the
+&lt;a href="https://laurentrdc.xyz/"&gt;Laurent P. René de Cotret&lt;/a&gt; using the
 &lt;a href="https://hackage.haskell.org/package/hakyll"&gt;Hakyll library&lt;/a&gt;. It was
 subsequently migrated to the &lt;a href="https://gohugo.io/"&gt;HUGO framework&lt;/a&gt; by &lt;a href="https://github.com/simlav000"&gt;Simon
 Lavoie&lt;/a&gt;.&lt;/p&gt;
@@ -148,22 +148,7 @@ Lavoie&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="section is-hidden-mobile has-text-centered"&gt;
 &lt;iframe src="https://calendar.google.com/calendar/embed?src=mgaps.calendar%40gmail.com&amp;ctz=America%2FToronto" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;p&gt;Follow our google calendar &lt;a href="https://calendar.google.com/calendar/embed?src=ctpaa142ofvam9td927eu990p4%40group.calendar.google.com&amp;amp;ctz=America%2FToronto"&gt;here&lt;/a&gt;!&lt;/p&gt;</description></item><item><title>Events and calendar</title><link>https://mgaps.physics.mcgill.ca/events/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/events/</guid><description>&lt;!-- 
- Google calendar widgets does not show properly on mobile
- Therefore, we hide it if the viewport is smaller than 768px wide.
-
- This width (768ox) is defined in Bulma's size categories
- https://bulma.io/documentation/modifiers/responsive-helpers/
-
- The google calendar widget is also set to a maximum width of 700px.
-
- Note that the website compiler will interpret the following as code
- if tags are indented. Therefore, don't indent!
---&gt;
-&lt;div class="section is-hidden-mobile has-text-centered"&gt;
-&lt;iframe src="https://calendar.google.com/calendar/embed?src=mgaps.calendar%40gmail.com&amp;ctz=America%2FToronto" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;p&gt;Follow our google calendar &lt;a href="https://calendar.google.com/calendar/embed?src=ctpaa142ofvam9td927eu990p4%40group.calendar.google.com&amp;amp;ctz=America%2FToronto"&gt;here&lt;/a&gt;!&lt;/p&gt;</description></item><item><title>Graduate Program Information</title><link>https://mgaps.physics.mcgill.ca/program/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/program/</guid><description>&lt;h3 id="courses"&gt;Courses&lt;/h3&gt;
+&lt;p&gt;Follow our google calendar &lt;a href="https://calendar.google.com/calendar/u/0/newembed?src=mgaps.calendar@gmail.com&amp;amp;ctz=America/Toronto"&gt;here&lt;/a&gt;!&lt;/p&gt;</description></item><item><title>Graduate Program Information</title><link>https://mgaps.physics.mcgill.ca/program/program/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/program/program/</guid><description>&lt;h3 id="courses"&gt;Courses&lt;/h3&gt;
 &lt;!-- Special CSS notification for very important stuff --&gt;
 &lt;div class="notification is-warning"&gt;
 Even if you are not taking any courses, you need to confirm your registration with the REGN RCGR every year.
@@ -171,17 +156,17 @@ Even if you are not taking any courses, you need to confirm your registration wi
 &lt;p&gt;&lt;strong&gt;Winter&lt;/strong&gt; CRN 2262&lt;/p&gt;
 &lt;/div&gt;
 &lt;h4 id="msc-program"&gt;MSc Program&lt;/h4&gt;
-&lt;p&gt;MSc students are required to take five graduate courses during the two year Master&amp;rsquo;s program. These 5 courses include four (4) 500-level courses et one (1) 600-level courses minimum. The 500-level courses can be replaced by 600-level courses (690 and 692 do not count).&lt;/p&gt;</description></item><item><title>Graduate Program Information</title><link>https://mgaps.physics.mcgill.ca/program/program/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/program/program/</guid><description>&lt;h3 id="courses"&gt;Courses&lt;/h3&gt;
-&lt;!-- Special CSS notification for very important stuff --&gt;
-&lt;div class="notification is-warning"&gt;
-Even if you are not taking any courses, you need to confirm your registration with the REGN RCGR every year.
-&lt;p&gt;&lt;strong&gt;Fall&lt;/strong&gt; : CRN 2234&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Winter&lt;/strong&gt; CRN 2262&lt;/p&gt;
-&lt;/div&gt;
-&lt;h4 id="msc-program"&gt;MSc Program&lt;/h4&gt;
-&lt;p&gt;MSc students are required to take five graduate courses during the two year Master&amp;rsquo;s program. These 5 courses include four (4) 500-level courses et one (1) 600-level courses minimum. The 500-level courses can be replaced by 600-level courses (690 and 692 do not count).&lt;/p&gt;</description></item><item><title>Mentorship program</title><link>https://mgaps.physics.mcgill.ca/academic/mentorship/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/academic/mentorship/</guid><description>&lt;p&gt;This term we are going to try starting a mentorship program in the department. The idea is that grads and post-docs who are interested to volunteer an hour or two of their time over the course of a term can sign up with our online form and then be matched to undergrads who share similar research and life interests.&lt;/p&gt;
-&lt;p&gt;We all know what it is like to be an undergrad and the questions we had (and still have) regarding our academic trajectory. What sort of research am I most interested in? What is important when choosing a school or a research group? Do I even want to do grad school? These questions are tough and we have all faced them in one way or another, and that experience alone is invaluable to undergraduates asking these same questions now.&lt;/p&gt;</description></item><item><title>Mentorship program</title><link>https://mgaps.physics.mcgill.ca/mentorship/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/mentorship/</guid><description>&lt;p&gt;This term we are going to try starting a mentorship program in the department. The idea is that grads and post-docs who are interested to volunteer an hour or two of their time over the course of a term can sign up with our online form and then be matched to undergrads who share similar research and life interests.&lt;/p&gt;
-&lt;p&gt;We all know what it is like to be an undergrad and the questions we had (and still have) regarding our academic trajectory. What sort of research am I most interested in? What is important when choosing a school or a research group? Do I even want to do grad school? These questions are tough and we have all faced them in one way or another, and that experience alone is invaluable to undergraduates asking these same questions now.&lt;/p&gt;</description></item><item><title>New Students</title><link>https://mgaps.physics.mcgill.ca/new_students/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/new_students/</guid><description>&lt;h1 id="basics"&gt;Basics&lt;/h1&gt;
+&lt;p&gt;MSc students are required to take five graduate courses during the two year Master&amp;rsquo;s program. These 5 courses include four (4) 500-level courses et one (1) 600-level courses minimum. The 500-level courses can be replaced by 600-level courses (690 and 692 do not count).&lt;/p&gt;</description></item><item><title>Mentorship program</title><link>https://mgaps.physics.mcgill.ca/academic/mentorship/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/academic/mentorship/</guid><description>&lt;p&gt;This term we are going to try starting a mentorship program in the department.
+The idea is that grads and post-docs who are interested to volunteer an hour or
+two of their time over the course of a term can sign up with our online form
+and then be matched to undergrads who share similar research and life
+interests.&lt;/p&gt;
+&lt;p&gt;We all know what it is like to be an undergrad and the questions we had (and
+still have) regarding our academic trajectory. What sort of research am I most
+interested in? What is important when choosing a school or a research group? Do
+I even want to do grad school? These questions are tough and we have all faced
+them in one way or another, and that experience alone is invaluable to
+undergraduates asking these same questions now.&lt;/p&gt;</description></item><item><title>New Students</title><link>https://mgaps.physics.mcgill.ca/program/new_students/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/program/new_students/</guid><description>&lt;h1 id="basics"&gt;Basics&lt;/h1&gt;
 &lt;p&gt;Welcome!&lt;/p&gt;
 &lt;p&gt;Here’s links on how to get settled into the McGill Physics Department as a new graduate student:&lt;/p&gt;
 &lt;ul&gt;
@@ -199,27 +184,7 @@ Even if you are not taking any courses, you need to confirm your registration wi
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id="mgaps-specific-information"&gt;MGAPS Specific Information&lt;/h1&gt;
-&lt;p&gt;MGAPS has plenty of resources at your disposal! Years ago we advocated for a graduate student lounge that is now located in room 322. We also have:&lt;/p&gt;</description></item><item><title>New Students</title><link>https://mgaps.physics.mcgill.ca/program/new_students/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/program/new_students/</guid><description>&lt;h1 id="basics"&gt;Basics&lt;/h1&gt;
-&lt;p&gt;Welcome!&lt;/p&gt;
-&lt;p&gt;Here’s links on how to get settled into the McGill Physics Department as a new graduate student:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Review and complete the on arrival items listed here: &lt;a href="http://www.physics.mcgill.ca/grads/arrival.html"&gt;http://www.physics.mcgill.ca/grads/arrival.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Check out the seminars and journal clubs going on in the department. Remember these are open to all students!
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.physics.mcgill.ca/seminars/"&gt;Physics&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://msi.mcgill.ca/index.php?page=discussion-groups"&gt;McGill Space Institute&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Review the &lt;a href="http://www.physics.mcgill.ca/grads/finance.html"&gt;McGill finances page&lt;/a&gt; and enter your banking info on &lt;strong&gt;Minerva → Employee Menu → Direct Deposit Bank Account&lt;/strong&gt;.
-&lt;ul&gt;
-&lt;li&gt;Make sure to fill up both the “payroll related” and “student related” bank info, even if the information is the same. This is very important for all since the information will be used for direct deposit of your pay-check, for scholarships and for travel-expenses reimbursement.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="mgaps-specific-information"&gt;MGAPS Specific Information&lt;/h1&gt;
-&lt;p&gt;MGAPS has plenty of resources at your disposal! Years ago we advocated for a graduate student lounge that is now located in room 322. We also have:&lt;/p&gt;</description></item><item><title>Preliminary Examination</title><link>https://mgaps.physics.mcgill.ca/academic/prelim/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/academic/prelim/</guid><description>&lt;p&gt;The physics preliminary exam is required for completion of a PhD in Physics. It has to be taken within the first year of the PhD program. The prelim now has two options:&lt;/p&gt;
-&lt;h3 id="new-format"&gt;New format&lt;/h3&gt;
-&lt;p&gt;The new format takes a more research-relevant approach. It will take the form of a special supervisory committee meeting. Students will be asked to prepare a document about their field of study which will survey existing and relevant literature and describe the motivation and methodology of their research project. The document will be submitted to the committee members a few weeks ahead of the exam. The literature will be suggested by the student’s supervisor and/or other committee members. The exam itself will include an oral questioning period - the committee will ask the students questions relevant to the written document and the proposed field of research. General physics questions may also be asked if they are relevant to the PhD research. The committee will provide feedback to the student on the document as well as the oral part and will call for a re-examination if needed.&lt;/p&gt;</description></item><item><title>Preliminary Examination</title><link>https://mgaps.physics.mcgill.ca/prelim/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/prelim/</guid><description>&lt;p&gt;The physics preliminary exam is required for completion of a PhD in Physics. It
+&lt;p&gt;MGAPS has plenty of resources at your disposal! Years ago we advocated for a graduate student lounge that is now located in room 322. We also have:&lt;/p&gt;</description></item><item><title>Preliminary Examination</title><link>https://mgaps.physics.mcgill.ca/academic/prelim/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/academic/prelim/</guid><description>&lt;p&gt;The physics preliminary exam is required for completion of a PhD in Physics. It
 has to be taken within the first year of the PhD program. The prelim now has
 two options:&lt;/p&gt;
 &lt;h3 id="new-format"&gt;New format&lt;/h3&gt;
@@ -240,12 +205,6 @@ oral part and will call for a re-examination if needed.&lt;/p&gt;</description><
 &lt;li&gt;&lt;a href="https://drive.google.com/file/d/1ocknDU1qHz2uXfN4QEM9qbjGYhe1M_2F/view"&gt;Motion in solidarity with SSMU and against McGill’s efforts to undermine student democracy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://drive.google.com/file/d/1hWDSgOOWrOKb-QK6Ikw1AJYtDqPoc8k3/view"&gt;Motion calling for McGill’s Board of Governors and the McGill Graduate Association of Physics Students (MGAPS) to divest from and boycott apartheid&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The second motion resolves that:&lt;/p&gt;</description></item><item><title>Satement on Palestine</title><link>https://mgaps.physics.mcgill.ca/palestine/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/palestine/</guid><description>&lt;h1 id="statement-from-the-mcgill-graduate-association-for-physics-students-on-palestine"&gt;Statement from the McGill Graduate Association for Physics Students on Palestine&lt;/h1&gt;
-&lt;p&gt;On 21 March 2024, physics graduate students voted nearly unanimously in favour of two motions on Palestine to be adopted by the McGill Graduate Association for Physics Students (MGAPS). These two motions were:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href="https://drive.google.com/file/d/1ocknDU1qHz2uXfN4QEM9qbjGYhe1M_2F/view"&gt;Motion in solidarity with SSMU and against McGill’s efforts to undermine student democracy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://drive.google.com/file/d/1hWDSgOOWrOKb-QK6Ikw1AJYtDqPoc8k3/view"&gt;Motion calling for McGill’s Board of Governors and the McGill Graduate Association of Physics Students (MGAPS) to divest from and boycott apartheid&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
 &lt;p&gt;The second motion resolves that:&lt;/p&gt;</description></item><item><title>Teaching and Learning</title><link>https://mgaps.physics.mcgill.ca/teaching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/teaching/</guid><description>&lt;p&gt;MGAPS intends to foster the growth of a pro-active TA community in the Physics Department. Key goals include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Introduce teaching concepts (active learning, student centered approaches)&lt;/li&gt;
@@ -254,11 +213,22 @@ oral part and will call for a re-examination if needed.&lt;/p&gt;</description><
 &lt;li&gt;Promote TA Mentorship&lt;/li&gt;
 &lt;li&gt;Solicit new ideas!&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="ta-handbook"&gt;TA Handbook&lt;/h3&gt;
-&lt;p&gt;Please consider attending the yearly TA training in the Fall whether you&amp;rsquo;re a new or returning TA. For those who need a reference document that covers all the main points, &lt;a href="https://mgaps.physics.mcgill.ca/files/Physics-TA-Handbook.pdf"&gt;we’ve compiled a document that you can access here&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Workspace</title><link>https://mgaps.physics.mcgill.ca/community/workspace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/community/workspace/</guid><description>&lt;p&gt;&lt;strong&gt;If you would like to request a new desk or chair, contact the current &lt;a href="https://mgaps.physics.mcgill.ca/people.html"&gt;Workspace Officer&lt;/a&gt; and once there are sufficient requests we will take action.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;MGAPS owns and is responsible for the fridges on the 2nd and 3rd floors. Please use them, but keep them tidy!&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="tawiki"&gt;TAWiki&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://wiki.hep.physics.mcgill.ca/TAWiki/index.php?title=Main_Page"&gt;This wiki&lt;/a&gt;
+is a higher education portal (HEP) intended to serve as a centralized resource
+for TAs working within the department. The purpose of this wiki is to improve
+continuity between semesters, overcome institutional memory loss, and provide a
+common space for organizing TA-related information and expected
+responsibilities.&lt;/p&gt;</description></item><item><title>Workspace</title><link>https://mgaps.physics.mcgill.ca/community/workspace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/community/workspace/</guid><description>&lt;p&gt;&lt;strong&gt;If you would like to request a new desk or chair, contact the current
+&lt;a href="https://mgaps.physics.mcgill.ca/people/"&gt;Workspace Officer&lt;/a&gt; and once there are sufficient requests we
+will take action.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MGAPS owns and is responsible for the fridges on the 2nd and 3rd floors.
+Please use them, but keep them tidy!&lt;/strong&gt;&lt;/p&gt;
 &lt;h4 id="reporting-a-workspacelab-issue"&gt;Reporting a workspace/lab issue&lt;/h4&gt;
-&lt;p&gt;Workspace issues can be reported at any time to MGAPS Workspace Officer, whose email is available here. More serious issues, such as laboratory safety concerns, should be discussed with the laboratory&amp;rsquo;s PI first. If the problem is not resolved with the PI, the Departmental Safety Committee (DSC) can be contacted through MGAPS Workspace Officer or by contacting directly the Committee chair (as of 2022, Prof. Dominic Ryan) at this email address: &lt;a href="mailto:safety.officer@physics.mcgill.ca"&gt;safety.officer@physics.mcgill.ca&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Workspace</title><link>https://mgaps.physics.mcgill.ca/workspace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mgaps.physics.mcgill.ca/workspace/</guid><description>&lt;p&gt;&lt;strong&gt;If you would like to request a new desk or chair, contact the current &lt;a href="https://mgaps.physics.mcgill.ca/people.html"&gt;Workspace Officer&lt;/a&gt; and once there are sufficient requests we will take action.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;MGAPS owns and is responsible for the fridges on the 2nd and 3rd floors. Please use them, but keep them tidy!&lt;/strong&gt;&lt;/p&gt;
-&lt;h4 id="reporting-a-workspacelab-issue"&gt;Reporting a workspace/lab issue&lt;/h4&gt;
-&lt;p&gt;Workspace issues can be reported at any time to MGAPS Workspace Officer, whose email is available here. More serious issues, such as laboratory safety concerns, should be discussed with the laboratory&amp;rsquo;s PI first. If the problem is not resolved with the PI, the Departmental Safety Committee (DSC) can be contacted through MGAPS Workspace Officer or by contacting directly the Committee chair (as of 2022, Prof. Dominic Ryan) at this email address: &lt;a href="mailto:safety.officer@physics.mcgill.ca"&gt;safety.officer@physics.mcgill.ca&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Workspace issues can be reported at any time to MGAPS &lt;a href="https://mgaps.physics.mcgill.ca/people/"&gt;Workspace Officer&lt;/a&gt;.
+More serious issues, such as laboratory safety concerns, should be discussed
+with the laboratory&amp;rsquo;s PI first. If the problem is not resolved with the PI, the
+Departmental Safety Committee (DSC) can be contacted through MGAPS Workspace
+Officer or by contacting directly the Committee chair (as of 2022, Prof.
+Dominic Ryan) at this email address:
+&lt;a href="mailto:safety.officer@physics.mcgill.ca"&gt;safety.officer@physics.mcgill.ca&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
