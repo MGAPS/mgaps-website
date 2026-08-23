@@ -2,7 +2,6 @@
 name: Minh Au
 email: minh.au@mail.mcgill.ca
 position: VP Communications
-#picture: images/profiles/sean-magnifico.jpg
 ---
 
 Hi there! I'm Minh and I take care of advertising MGAPS events, organizing
