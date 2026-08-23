@@ -1,0 +1,33 @@
+{{ $person := . }}
+
+<div class="card mb-5">
+    <div class="card-content">
+
+        <article class="media" style="align-items: center;">
+
+            {{ with $person.Params.picture }}
+            <figure class="media-left">
+                <p class="image">
+                    <img src="{{ . | relURL }}" alt="{{ $person.Params.name }}"
+                        style="width: 128px; height: 128px; object-fit: cover;">
+                </p>
+            </figure>
+            {{ end }}
+
+            <div class="media-content">
+                <p class="title is-4">{{ $person.Params.name }}</p>
+                <p class="subtitle is-5">{{ $person.Params.position }}</p>
+
+                <p>
+                    <a href="mailto:{{ $person.Params.email }}">{{ $person.Params.email }}</a>
+                </p>
+            </div>
+
+        </article>
+
+        <div class="content mt-4">
+            {{ $person.Content }}
+        </div>
+
+    </div>
+</div>

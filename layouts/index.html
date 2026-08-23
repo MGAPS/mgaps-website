@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<h3 class="title is-3">Quick links</h3>
+
+<div class="columns is-multiline">
+    {{ range (where site.RegularPages "Section" "quick-links") }}
+    <div class="column is-one-fifth">
+        <div class="card">
+            <div class="card-content">
+                <p class="title is-5">
+                    <a href="{{ .Params.link }}" target="_blank" rel="noopener">
+                        {{ .Params.name }}
+                    </a>
+                </p>
+                <p class="content">{{ .Content }}</p>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>
+<!--
+    Google calendar widget does not show properly on mobile.
+    Hide it if the viewport is smaller than 768px wide (Bulma breakpoint).
+-->
+<div class="section is-hidden-mobile">
+    <h3 class="title is-3">Calendar</h3>
+
+    <div class="has-text-centered">
+        <iframe src="https://calendar.google.com/calendar/embed?src=mgaps.calendar%40gmail.com&ctz=America%2FToronto"
+            style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+</div>
+
+{{ end }}

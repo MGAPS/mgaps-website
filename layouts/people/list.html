@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<h2 class="title is-2">Executive Council</h2>
+
+{{ $council := .Site.GetPage "section" "people/council" }}
+
+<!-- President first -->
+{{ $president := $council.GetPage "president.md" }}
+{{ partial "person-card.html" $president }}
+
+{{ range $council.Pages }}
+{{ if ne .File.BaseFileName "president" }}
+{{ partial "person-card.html" . }}
+{{ end }}
+{{ end }}
+
+<h2 class="title is-2">Officers</h2>
+
+{{ $officers := .Site.GetPage "section" "people/officers" }}
+{{ range $officers.Pages }}
+{{ partial "person-card.html" . }}
+{{ end }}
+
+{{ end }}

@@ -1,0 +1,8 @@
+baseURL = 'https://mgaps.physics.mcgill.ca/'
+languageCode = 'en-us'
+title = 'MGAPS'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
