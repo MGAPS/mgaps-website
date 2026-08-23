@@ -1,96 +1,40 @@
 name: GH-Pages
 
 on:
-  # Tests for pull requests are located in a different workflow
   push:
-    branches: [master]
+    branches: [hugo-migration]
+
   pull_request:
-    branches: [master]
-  schedule:
-    # Build the website twice a week, to keep it up-to-date
-    # and keep the cache warm.
-    # See https://crontab.guru/#0_5_*_*_0,4
-    - cron: '0 5 * * 0,4'
+    branches: [hugo-migration]
+
   workflow_dispatch:
 
 
 jobs:
   build-and-deploy:
     if: contains(toJson(github.event.commits), '[ci skip]') == false && contains(toJson(github.event.commits), '[skip ci]') == false
+
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-      with:
-        # We need to fetch the whole history for the automatic 'last-updated'
-        # functionality works as expected
-        fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Install cabal/ghc
-      uses: haskell/actions/setup@v1
-      id: setup-haskell
-      with:
-        ghc-version: '9.0.1'
-        cabal-version: '3.6.2.0'
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.164.0'
+          extended: true
 
-    - name: Set PATH for cabal-installed executables
-      run: |
-        echo "$HOME/.cabal/bin" >> $GITHUB_PATH
+      - name: Build website
+        run: hugo --minify
 
-    - name: Set Cabal options
-      # Overwriting prevent cabal from raising an error when installing
-      # an executable that is already present (because of caching)
-      # Some of these options are superfluous for this workflow,
-      # but I'm keeping them in sync with ci.yml so that caching is
-      # shared
-      run: |
-        cabal update
-        cabal user-config update -f -a "overwrite-policy: always"
-        cabal user-config update -f -a "install-method: copy"
-        cabal user-config update -f -a "split-sections: True"
-        cabal user-config update -f -a "executable-stripping: True"
-
-    - name: Cache cabal work
-      uses: actions/cache@v3
-      with:
-        path: |
-          dist-newstyle
-          ${{ steps.setup-haskell.outputs.cabal-store }}
-        key: ${{ runner.os }}-${{ hashFiles('cabal.*') }}-cabal-install
-
-    - name: Build site compiler
-      run: |
-        cabal install -j --disable-optimization
-
-    - name: Download Bulma CSS
-      env:
-        bulma-version: 0.9.3
-      run: |
-        wget -c https://github.com/jgthms/bulma/releases/download/${{ env.bulma-version }}/bulma-${{ env.bulma-version }}.zip 
-        unzip bulma-${{ env.bulma-version }}.zip -d sass
-
-    - name: Compile CSS from SCSS files
-      uses: gha-utilities/sass-build@v0.4.7
-      with:
-        source: sass/mgaps-style.scss
-        destination: css/mgaps-style.css
-
-    - name: Build website
-      run: |
-        mgaps-website clean
-        mgaps-website build
-        
-    - name: Check internal links
-      run: |
-        mgaps-website check --internal-links
-
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.1.5
-      # Skip for pull requests
-      # Example:
-      #     https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#issue_comment
-      if: github.event_name != 'pull_request'
-      with:
-        BRANCH: gh-pages
-        FOLDER: _rendered
-        CLEAN: true
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        if: github.event_name != 'pull_request'
+        with:
+          branch: gh-pages
+          folder: public
+          clean: true
