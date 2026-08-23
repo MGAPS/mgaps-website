@@ -20,7 +20,7 @@ contact: VP Social
 <iframe src="https://calendar.google.com/calendar/embed?src=mgaps.calendar%40gmail.com&ctz=America%2FToronto" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
 
-Follow our google calendar [here](https://calendar.google.com/calendar/embed?src=ctpaa142ofvam9td927eu990p4%40group.calendar.google.com&ctz=America%2FToronto)!
+Follow our google calendar [here](https://calendar.google.com/calendar/u/0/newembed?src=mgaps.calendar@gmail.com&ctz=America/Toronto)!
 
 MGAPS organizes several subsidized events per semester:
 
@@ -34,14 +34,16 @@ In the Fall semester:
 * Board games nights
 * Wellness events
 * Potlucks 
-* Hockey nights (come cheer for the physics hockey team, and enjoy a drink at BdP afterwards)
+* Hockey nights (come cheer for the physics hockey team, and enjoy a drink at
+BdP afterwards)
 
 In the Winter semester:
 
 * Thomson house party 
 * MSPS Talent Show
 * PGSS Sugar Shack
-* Hockey nights (come cheer for the physics hockey team, and enjoy a drink at BdP afterwards)
+* Hockey nights (come cheer for the physics hockey team, and enjoy a drink at
+BdP afterwards)
 * Post Prelim'Exam party/BBQ (in May)
 * MGAPS winter retreat
 
@@ -49,4 +51,5 @@ In the Summer months:
 
 * Trip to Calypso water park
 
-MGAPS is also happy to fund events organized by students - contact one of the execs for details!
+MGAPS is also happy to fund events organized by students - contact one of the
+execs for details!

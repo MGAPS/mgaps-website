@@ -3,7 +3,7 @@ title: About this website
 ---
 
 This website was originally created by 
-[Laurent P. René de Cotret](https://www.physics.mcgill.ca/~decotret) using the
+[Laurent P. René de Cotret](https://laurentrdc.xyz/) using the
 [Hakyll library](https://hackage.haskell.org/package/hakyll). It was
 subsequently migrated to the [HUGO framework](https://gohugo.io/) by [Simon
 Lavoie](https://github.com/simlav000).

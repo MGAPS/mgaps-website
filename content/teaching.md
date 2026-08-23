@@ -12,6 +12,15 @@ MGAPS intends to foster the growth of a pro-active TA community in the Physics D
 * Promote TA Mentorship 
 * Solicit new ideas! 
 
+### TAWiki
+
+[This wiki](https://wiki.hep.physics.mcgill.ca/TAWiki/index.php?title=Main_Page)
+is a higher education portal (HEP) intended to serve as a centralized resource
+for TAs working within the department. The purpose of this wiki is to improve
+continuity between semesters, overcome institutional memory loss, and provide a
+common space for organizing TA-related information and expected
+responsibilities. 
+
 ### TA Handbook
 
 Please consider attending the yearly TA training in the Fall whether you're a new or returning TA. For those who need a reference document that covers all the main points, [we’ve compiled a document that you can access here](/files/Physics-TA-Handbook.pdf).
