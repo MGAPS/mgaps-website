@@ -1,33 +1,9 @@
-# Haskell-specific ignores
-dist
-dist-*
-cabal-dev
-*.o
-*.hi
-*.chi
-*.chs.h
-*.dyn_o
-*.dyn_hi
-.hpc
-.hsenv
-.cabal-sandbox/
-cabal.sandbox.config
-*.prof
-*.aux
-*.hp
-*.eventlog
-.stack-work/
-cabal.project.local
-cabal.project.local~
-.HTF/
-.ghc.environment.*
-*.*~
+# Hugo
+/public/
+/.hugo_build.lock
 
-# Hakyll-specific ignored
-_cache/
+# Hugo build/cache
+/resources/_gen/
 
-# Build directory
-_rendered/
-
-# OSX file explorer addendum stuff
+# OS
 .DS_Store

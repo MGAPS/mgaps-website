@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<div class="columns">
+    {{ with .Params.picture }}
+    <div class="column is-one-quarter">
+        <figure class="image">
+            <img src="/{{ . }}" alt="{{ $.Params.name }}">
+        </figure>
+    </div>
+    {{ end }}
+    <div class="column">
+        <p class="title is-4">{{ .Params.name }}</p>
+        <p class="subtitle is-6">{{ .Params.position }}</p>
+        {{ with .Params.email }}
+        <p><a href="mailto:{{ . }}">{{ . }}</a></p>
+        {{ end }}
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+
+{{ end }}
