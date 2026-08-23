@@ -2,10 +2,10 @@ name: GH-Pages
 
 on:
   push:
-    branches: [hugo-migration]
+    branches: [master]
 
   pull_request:
-    branches: [hugo-migration]
+    branches: [master]
 
   workflow_dispatch:
 
