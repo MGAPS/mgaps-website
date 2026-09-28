@@ -6,7 +6,7 @@
 
 <div class="columns is-multiline">
     {{ range (where site.RegularPages "Section" "quick-links") }}
-    <div class="column is-one-fifth">
+    <div class="column is-one-third">
         <div class="card">
             <div class="card-content">
                 <p class="title is-5">
@@ -19,6 +19,17 @@
         </div>
     </div>
     {{ end }}
+</div>
+
+<div class="section">
+    <h3 class="title is-3">Now Presenting: The Ground State - MGAPS's Very Own Podcast</h3>
+
+    <div class="has-text-centered">
+        <iframe width="800" height="450" src="https://www.youtube.com/embed?listType=playlist&list=PLO0lsuFnxCkk"
+            title="The Ground State - MGAPS Podcast" frameborder="0"
+            allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+    </div>
 </div>
 <!--
     Google calendar widget does not show properly on mobile.
