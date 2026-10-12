@@ -2,6 +2,7 @@
 name: Simon Lavoie
 email: simon.lavoie@mail.mcgill.ca
 position: RTech and Computing Officer
+picture: images/profiles/simon-lavoie.jpg
 ---
 
 Hi, I'm Simon and I'm the RTech and Computing Officer! This officer acts as a

@@ -1,11 +1,13 @@
 ---
-name: Valentin Boettcher
-email: valentin.boettcher@mail.mcgill.ca
+name: Sophia Rubens
+email: sophia.rubens@mail.mcgill.ca
 position: PGSS Representative
+picture: images/profiles/sophia-rubens.jpg
 ---
 
-Hi, I’m Valentin, one of your representatives in the Post-Graduate Students’
-Society (PGSS). My role is to represent the Physics graduate students by voting
-on their behalf at the PGSS Council meetings. I also ensure that MGAPS stays
-updated on important issues and initiatives. If you have any concerns or topics
-you’d like me to raise at the PGSS Council, feel free to reach out via email.
+Hi everyone! My name is Sophia and I’m a third-year PhD student in
+observational cosmology. Along with Angela and Félix M, I’ll be one of your
+PGSS reps this year! If you have any thoughts about communication between MGAPS
+and PGSS, ideas for MGAPS, interest in using interferometry to construct
+late-universe portraits of the 21 cm line, or want leads on the Montréal world
+music scene, feel free to send me a message via Slack or email!

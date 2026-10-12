@@ -1,8 +1,8 @@
 ---
-name: Kate Szabo
-email: kate.szabo@mail.mcgill.ca
+name: Lucas Kritz
+email: lucas.kritz@mail.mcgill.ca
 position: Sports Officer
-picture: images/profiles/kate-szabo.jpg
+#picture: images/profiles/lucas-kritz.jpg
 ---
 
 Hello Physics Grads! As sports officer it is my pleasure to organize fun

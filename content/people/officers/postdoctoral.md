@@ -1,6 +1,6 @@
 ---
-name: (Vacant)
-email: N/A
+name: Renan Hirayama
+email: renan.hirayama@mcgill.ca
 position: Postdoctoral Officer
 ---
 
