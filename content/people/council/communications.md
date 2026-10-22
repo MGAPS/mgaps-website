@@ -2,9 +2,10 @@
 name: Catherine Boisvert
 email: catherine.boisvert4@mail.mcgill.ca
 position: VP Communications
+picture: images/profiles/catherine-boisvert.jpg
 ---
 
-Hi there! I'm Minh and I take care of advertising MGAPS events, organizing
+Hi there! I'm Cat and I take care of advertising MGAPS events, organizing
 social media, creating informative posters and communicating with you all in
 general. If I’m doing my job right, you’ll get regular emails from me (peep the
 newsletter -- there are fun bits in there). I also take on secretarial duties
